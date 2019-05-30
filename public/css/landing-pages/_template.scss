@@ -1,0 +1,232 @@
+// main: style.scss
+
+/*
+ * GLOBAL
+ */
+body{
+    font-family: HelveticaNeue;
+    font-size: 1.6em;
+    background-color: #222;
+    margin: 0px;
+    padding: 0px;
+    color:white;
+    overflow-x: hidden;
+}
+
+
+
+/*
+ * HEADER
+ */
+header{
+    background-color: #222;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+header nav.navbar{
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}  
+
+header nav.navbar:after{
+    content:"";
+    background: -webkit-linear-gradient(left, rgba(252,221,18,0) 0%, rgba(252,221,18,1) 50%, rgba(252,221,18,0) 100%);
+    display: block;
+    height:1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+} 
+
+header h1{
+    color: #9d9d9d;
+}
+
+header img.logo{
+    margin-top:10px;
+}
+
+
+
+/*
+ * SECTION
+ */
+section {
+    padding: 20px;
+    min-height: 480px;
+}
+
+section div.text
+{
+    font-size: 2em;
+}
+
+section div.imageContainer
+{
+    height: 566px;
+    font-size: 1.2em;
+    position: relative;
+}
+
+
+section div.imageContainer div.image
+{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    height: 85%;
+    text-align:center;
+}
+
+section div.imageContainer div.image img
+{
+    position: relative;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+section div.formContainer
+{
+    background-color: #FCDE11;
+    color: black;
+    height: 566px;
+    padding: 20px;
+}
+
+section div.formContainer p.legend
+{
+    font-size: 0.8em;
+}
+
+section div.formContainer p.legend a
+{
+    color: black;
+    text-decoration: underline;
+}
+
+section div.formContainer div.title
+{
+    background-color: #222;
+    color:white;
+    padding: 1px;
+
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+section div.formContainer div.title h2
+{
+    font-size: 1.3em;
+}
+
+
+section div.formContainer div.mauticform-button-wrapper{
+    text-align: center;
+}
+
+section div.formContainer button
+{
+    position:relative;
+    background-color: #222 !important;
+    border: none !important;
+    padding: 10px !important;
+    margin: 0 auto !important;
+    font-size: 1.2em !important;
+    color: #FCDE11 !important;
+    width: 150px !important;
+    font-weight: normal !important;
+}
+
+/*
+ * FOOTER
+ */
+footer
+{
+    position:relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    color: #6d6e71;
+}
+
+footer a{
+    color: #6d6e71;
+}
+
+footer a:hover
+{
+    color: #ffffff;
+}
+
+footer:after{
+    content:"";
+    background: -webkit-linear-gradient(left, rgba(252,221,18,0) 0%, rgba(252,221,18,1) 50%, rgba(252,221,18,0) 100%);
+    display: block;
+    height:1px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+} 
+
+footer div.sociaMedia{
+    padding:5px;
+    color: #6d6e71;
+    position:relative;
+}
+
+footer div.socialMedia a,
+footer div.socialMedia a:hover
+{
+    text-decoration:none;
+}
+
+footer div.socialMedia a:hover i.fa-inverse
+{
+    color: #6d6e71;
+}
+
+footer div.copyright
+{
+    font-size: 0.9em;
+    padding:5px;
+    padding-top: 20px;
+}
+
+footer div.copyright a
+{
+    text-decoration: underline
+}
+
+
+
+/*
+ * OBRIGADO
+ */
+section div.thanksContainer,
+section div.thanksContainer div.imageContainer,
+section div.thanksContainer div.formContainer
+{
+    height: 450px !important;
+}
+
+section p.thanks
+{
+    font-size: 1.5em;
+    margin: 50px;
+}
+
+section a.download
+{
+    background-color: #1f201b;
+    position:relative;
+    padding: 20px;
+    color: #FCDE11;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    border: solid 5px white;
+}

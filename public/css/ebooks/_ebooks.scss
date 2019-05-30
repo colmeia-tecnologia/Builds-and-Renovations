@@ -1,0 +1,32 @@
+// main: style.scss
+
+div.ebookItem
+{
+    padding: 0px 20px;
+}
+
+div.ebookItem a.linkEbook,
+div.ebookItem a.linkEbook:hover
+{
+    color: #F7CA34;
+    text-decoration:none;
+}
+
+div.ebookItem img.ebookImg
+{
+    max-height: 280px;
+    margin: 0 auto;
+}
+
+div.ebookItem h1
+{
+    font-size: 1.5em;
+    color: #F7CA34;
+    font-weight: bolder !important;
+}
+
+div.ebookItem p.ebookDescription
+{
+    color: #F7CA34;
+    height: 100px;
+}
