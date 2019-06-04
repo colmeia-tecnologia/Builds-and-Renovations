@@ -35,9 +35,9 @@ class PostCategoryRequest extends FormRequest
      */
     public function messages()
     {
-        return [
+        /*return [
             'title.required' => 'O campo "Título" é obrigatório',
             'title.max' => 'O campo "Título" não deve ser maior do que :max caracteres',
-        ];
+        ];*/
     }
 }

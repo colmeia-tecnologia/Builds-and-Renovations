@@ -36,10 +36,10 @@ class LandingPageRequest extends FormRequest
      */
     public function messages()
     {
-        return [
+        /*return [
             'title.required' => 'O campo "Título" é obrigatório',
 
             'image.required' => 'O campo "Imagem" é obrigatório',
-        ];
+        ];*/
     }
 }

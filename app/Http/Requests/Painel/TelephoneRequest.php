@@ -36,10 +36,10 @@ class TelephoneRequest extends FormRequest
      */
     public function messages()
     {
-        return [
+        /*return [
             'name.required' => 'O campo "Nome" é obrigatório',
 
             'telephone.required' => 'O campo "Telefone" é obrigatório',
-        ];
+        ];*/
     }
 }

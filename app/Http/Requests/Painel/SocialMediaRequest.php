@@ -37,13 +37,13 @@ class SocialMediaRequest extends FormRequest
      */
     public function messages()
     {
-        return [
+        /*return [
             'name.required' => 'O campo "Nome" é obrigatório',
 
             'url.required' => 'O campo "Link" é obrigatório',
             'url.url' => 'O campo "Link" deve ser uma URL válida',
 
             'icon.required' => 'O campo "Ícone" é obrigatório',
-        ];
+        ];*/
     }
 }
