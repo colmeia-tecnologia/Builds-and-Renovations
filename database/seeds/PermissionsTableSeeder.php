@@ -15,23 +15,27 @@ class PermissionsTableSeeder extends Seeder
         $tables =  [
                         'banners'           => 'banners',
                         //'portfolios'      => 'portifólio',
-                        'services'          => 'categorias de serviços',
-                        'subservices'       => 'serviços específicos',
-                        'clients'           => 'clientes',
-                        'socialmedias'      => 'mídias sociais',
-                        'telephones'        => 'telefones',
-                        'users'             => 'usuários',
-                        'permissions'       => 'permissões',
+                        'services'          => 'services categories',
+                        'subservices'       => 'specific services',
+                        'clients'           => 'clients',
+                        'socialmedias'      => 'social medias',
+                        'telephones'        => 'telephones',
+                        'users'             => 'users',
+                        'permissions'       => 'permissions',
                         //Blog
-                        'post_categories'   => 'categorias de posts',
-                        'posts'             => 'posts',
+                        //'post_categories'   => 'post categories',
+                        //'posts'             => 'posts',
+                        //Landing Pages
+                        //'landing_pages'     => 'landing pages',
+                        //Ebooks
+                        //'ebooks'            => 'e-books'
                     ];
 
         $permissions =  [
-                            'view'      => 'Visualizar',
-                            'create'    => 'Criar',
-                            'update'    => 'Atualizar',
-                            'delete'    => 'Apagar'
+                            'view'      => 'See',
+                            'create'    => 'Create',
+                            'update'    => 'Edit',
+                            'delete'    => 'Delete'
                         ];
 
 

@@ -73,10 +73,26 @@
                             <tr>
                         @endif
 
-                        @if($permission->description == 'See posts categories')
+                        @if($permission->description == 'See post categories')
                             <tr>
                                 <td colspan='4' class='tableLabel'>
                                     Blog
+                                </td>
+                            </tr>
+                        @endif
+
+                        @if($permission->description == 'See landing pages')
+                            <tr>
+                                <td colspan='4' class='tableLabel'>
+                                    Landing Pages
+                                </td>
+                            </tr>
+                        @endif
+
+                        @if($permission->description == 'See e-books')
+                            <tr>
+                                <td colspan='4' class='tableLabel'>
+                                    E-books
                                 </td>
                             </tr>
                         @endif

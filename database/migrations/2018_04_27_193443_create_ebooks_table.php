@@ -28,8 +28,6 @@ class CreateEbooksTable extends Migration
                     ->references('id')
                     ->on('landing_pages');
 		});
-
-		$this->addPermission();
 	}
 
 	/**
@@ -39,28 +37,7 @@ class CreateEbooksTable extends Migration
 	 */
 	public function down()
 	{
-		$this->deletePermissions();
 		Schema::drop('ebooks');
-	}
-
-	/**
-	 * Add landing pages permissions
-	 * 
-	 * @return void
-	 */
-	private function addPermission()
-	{
-		PermissionController::addPermissions(['ebooks' => 'e-books']);
-	}
-
-	/**
-	 * Remove landing pages permissions
-	 * 
-	 * @return void
-	 */
-	private function deletePermissions()
-	{
-		PermissionController::deletePermissions('ebooks');
 	}
 
 }

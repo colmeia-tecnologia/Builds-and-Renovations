@@ -25,8 +25,6 @@ class CreateLandingPagesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 		});
-
-		$this->addPermission();
 	}
 
 	/**
@@ -36,27 +34,6 @@ class CreateLandingPagesTable extends Migration
 	 */
 	public function down()
 	{
-		$this->deletePermissions();
 		Schema::drop('landing_pages');
-	}
-
-	/**
-	 * Add landing pages permissions
-	 * 
-	 * @return void
-	 */
-	private function addPermission()
-	{
-		PermissionController::addPermissions(['landing_pages' => 'landing pages']);
-	}
-
-	/**
-	 * Remove landing pages permissions
-	 * 
-	 * @return void
-	 */
-	private function deletePermissions()
-	{
-		PermissionController::deletePermissions('landing_pages');
 	}
 }
