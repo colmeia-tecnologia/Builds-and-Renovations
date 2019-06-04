@@ -25,7 +25,7 @@
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <div class="col-md-6 col-md-offset-3">
-                                <input id="password" type="password" class="form-control" name="password" placeholder='Senha' required>
+                                <input id="password" type="password" class="form-control" name="password" placeholder='Password' required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -39,7 +39,7 @@
                             <div class="col-md-6 col-md-offset-3 text-center">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Lembrar 
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember me
                                     </label>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                 </button><br/>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Esqueceu a senha?
+                                    Forget the password?
                                 </a>
                             </div>
                         </div>
