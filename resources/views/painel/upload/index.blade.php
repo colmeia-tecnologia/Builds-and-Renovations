@@ -12,7 +12,7 @@
 <div class="modal-body">
     <div class='row'>
         <div class='col-md-12 text-center'>
-            <h1>Imagens</h1>
+            <h1>Images</h1>
         </div>
 
         {!! Form::input('hidden', 'image', null, ['id' => 'selectedImage']) !!}
@@ -28,7 +28,7 @@
 
             <div class='col-md-12 text-center margin-top-p'>
                 <a class='btn btn-default uploadSelectImage' data-name='{{asset('img/template/painel/sem-imagem.jpg')}}'>
-                    Selecionar
+                    Select
                 </a>
             </div>
         </div>

@@ -3,7 +3,7 @@
 @section('content')
     <div class='col-md-12 text-center'>
         <h1>
-            Alterar Telefone: {{$telephone->telephone}} - ID: {{$telephone->id}}
+            Edit Telephone: {{$telephone->telephone}} - ID: {{$telephone->id}}
         </h1>
     </div>
 

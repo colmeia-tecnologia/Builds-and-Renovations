@@ -3,7 +3,7 @@
 @section('content')
     <div class='col-md-12 text-center'>
         <h1>
-            Alterar Serviço: {{$subservice->title}}  - ID: {{$subservice->id}}
+            Edit Service: {{$subservice->title}}  - ID: {{$subservice->id}}
         </h1>
     </div>
 

@@ -7,8 +7,8 @@
 
     @can('create-landing_pages')
         <div class='col-md-12 text-center'>
-            <a href='{{route('landing_pages.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('landing_pages.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>

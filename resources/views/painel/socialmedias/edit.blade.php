@@ -3,7 +3,7 @@
 @section('content')
     <div class='col-md-12 text-center'>
         <h1>
-            Alterar Mídia Social: {{$socialmedia->name}}  - ID: {{$socialmedia->id}}
+            Edit Social Media: {{$socialmedia->name}}  - ID: {{$socialmedia->id}}
         </h1>
     </div>
 

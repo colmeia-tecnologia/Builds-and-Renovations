@@ -7,8 +7,8 @@
 
     @can('create-banners')
         <div class='col-md-12 text-center'>
-            <a href='{{route('banners.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('banners.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>
@@ -20,10 +20,10 @@
             <tr>
                 <th width="100px">Ações</th>
                 <th width="100px">ID</th>
-                <th>Titulo</th>
-                <th width="150px">Imagem</th>
+                <th>Title</th>
+                <th width="150px">Image</th>
                 <th width="50px">Pos.</th>
-                <th width="100px">Ativo</th>
+                <th width="100px">Active</th>
             </tr>
         </thead>
         <tbody>
@@ -56,13 +56,13 @@
                             $checked = 'checked';
                     @endphp
 
-                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="Banner" data-id="{{$banner->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Ativo" data-off="Inativo" >
+                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="Banner" data-id="{{$banner->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Inactive" >
                 </td>
             </tr>
             @empty
             <tr>
-                <td colspan='5' class='text-center'>
-                    Nenhum Banner cadastrado
+                <td colspan='6' class='text-center'>
+                    No Banner
                 </td>
             </tr>
             @endforelse

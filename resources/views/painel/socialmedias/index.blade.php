@@ -2,13 +2,13 @@
 
 @section('content')
     <div class='col-md-12 text-center'>
-        <h1>Mídias Sociais</h1>
+        <h1>Social Media</h1>
     </div>
 
     @can('create-socialmedias')
         <div class='col-md-12 text-center'>
-            <a href='{{route('socialmedias.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('socialmedias.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>
@@ -20,10 +20,10 @@
             <tr>
                 <th width="100px">Ações</th>
                 <th width="100px">ID</th>
-                <th>Nome</th>
-                <th>Link</th>
-                <th width="50px">Ícone</th>
-                <th width="100px">Ativo</th>
+                <th>Name</th>
+                <th>URL</th>
+                <th width="50px">Icon</th>
+                <th width="100px">Active</th>
             </tr>
         </thead>
         <tbody>
@@ -60,13 +60,13 @@
                             $checked = 'checked';
                     @endphp
 
-                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="SocialMedia" data-id="{{$socialmedia->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Ativo" data-off="Inativo" >
+                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="SocialMedia" data-id="{{$socialmedia->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Inactive" >
                 </td>
             </tr>
             @empty
             <tr>
                 <td colspan='6' class='text-center'>
-                    Nenhuma Mídia Social cadastrada
+                    No Social Media
                 </td>
             </tr>
             @endforelse

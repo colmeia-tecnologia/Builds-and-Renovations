@@ -7,8 +7,8 @@
 
     @can('create-users')
         <div class='col-md-12 text-center'>
-            <a href='{{route('users.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('users.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>
@@ -58,7 +58,7 @@
                             $checked = 'checked';
                     @endphp
 
-                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="User" data-id="{{$user->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Ativo" data-off="Inativo" >
+                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="User" data-id="{{$user->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Inactive" >
                 </td>
             </tr>
             @empty

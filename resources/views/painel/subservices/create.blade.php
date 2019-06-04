@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='col-md-12 text-center'>
-        <h1>Novo Serviço</h1>
+        <h1>New Service</h1>
     </div>
 
     @include('painel.layout.errors')

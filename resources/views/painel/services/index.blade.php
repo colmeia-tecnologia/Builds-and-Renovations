@@ -2,13 +2,13 @@
 
 @section('content')
     <div class='col-md-12 text-center'>
-        <h1>Serviços</h1>
+        <h1>Services</h1>
     </div>
 
     @can('create-services')
         <div class='col-md-12 text-center'>
-            <a href='{{route('services.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('services.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>
@@ -20,10 +20,10 @@
             <tr>
                 <th width="100px">Ações</th>
                 <th width="100px">ID</th>
-                <th>Nome</th>
-                <th width="100px">Imagem</th>
-                <th width="50px">Cor</th>
-                <th width="100px">Ativo</th>
+                <th>Name</th>
+                <th width="100px">Image</th>
+                <th width="50px">Color</th>
+                <th width="100px">Active</th>
             </tr>
         </thead>
         <tbody>
@@ -54,13 +54,13 @@
                             $checked = 'checked';
                     @endphp
 
-                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="Service" data-id="{{$service->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Ativo" data-off="Inativo" >
+                    <input type="checkbox" {{$checked}} class='checkboxActive' data-model="Service" data-id="{{$service->id}}" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Active" data-off="Inactive" >
                 </td>
             </tr>
             @empty
             <tr>
                 <td colspan='6' class='text-center'>
-                    Nenhum Serviço cadastrado
+                    No Service
                 </td>
             </tr>
             @endforelse

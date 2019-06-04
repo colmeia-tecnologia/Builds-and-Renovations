@@ -3,8 +3,8 @@
         @if(!isset($banner))
             <img 
                 src='{{ asset('img/template/painel/sem-imagem.jpg') }}' 
-                alt='Clique para selecionar a imagem' 
-                title='Clique para selecionar a imagem' 
+                alt='Click to select the image' 
+                title='Click to select the image' 
                 class='img-responsive'
                 id='image-uploaded'
             >
@@ -12,8 +12,8 @@
         @else
             <img 
                 src='{{$banner->image}}' 
-                alt='Clique para selecionar a imagem' 
-                title='Clique para selecionar a imagem' 
+                alt='Click to select the image' 
+                title='Click to select the image' 
                 class='img-responsive'
                 id='image-uploaded'
             >
@@ -26,32 +26,32 @@
 
 <div class='col-md-8'>
     <div class="input-group">
-        <span class="input-group-addon" id="titulo">Titulo</span>
-        {!! Form::input('text', 'title', null, ['class' => 'form-control', 'aria-describedby' => 'titulo']) !!}
+        <span class="input-group-addon" id="title">Title</span>
+        {!! Form::input('text', 'title', null, ['class' => 'form-control', 'aria-describedby' => 'title']) !!}
     </div>
 </div>
 
 <div class='col-md-8 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="order">Ordem</span>
+        <span class="input-group-addon" id="order">Order</span>
         {!! Form::input('number', 'order', null, ['class' => 'form-control', 'aria-describedby' => 'order', 'min' => 0]) !!}
     </div>
 </div>
 
 <div class='col-md-8 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="active">Ativo</span>
-        {!! Form::select('active', ['1' => 'Ativo', '0' => 'Inativo'], null, ['class' => 'form-control', 'aria-describedby' => 'active']) !!}
+        <span class="input-group-addon" id="active">Active</span>
+        {!! Form::select('active', ['1' => 'Yes', '0' => 'No'], null, ['class' => 'form-control', 'aria-describedby' => 'active']) !!}
     </div>
 </div>
 
 <div class='col-md-8 margin-top'>
-    <label for='description'>Descrição</label>
+    <label for='description'>Description</label>
     <textarea name="description" id='description' id='description' class='tinymce'>{{$banner->description or ''}}</textarea>
 </div>
 
 <div class='col-md-12 text-center margin-top'>
-    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Salvar&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
+    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Save&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
 </div>
 
 @section('scripts')

@@ -2,7 +2,7 @@
     {{--Site--}}
     <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            Site  <span class="caret"></span>
+            Website  <span class="caret"></span>
         </a>
 
         <ul class="dropdown-menu" role="menu">
@@ -25,47 +25,47 @@
             {{--SERVICES--}}
             @can('view-services')
                 <li>
-                    <a href='{{route('services.index')}}' alt='Serviços' title='Serviços'>
-                        <i class="fa fa-wrench" aria-hidden="true"></i> Serviços
+                    <a href='{{route('services.index')}}' alt='Services' title='Services'>
+                        <i class="fa fa-wrench" aria-hidden="true"></i> Services
                     </a>
                 </li>
             @endcan
             @can('view-subservices')
                 <li>
                     <a href='{{route('subservices.index')}}' alt='Serviços Específicos' title='Serviços Específicos'>
-                        <i class="fa fa-wrench" aria-hidden="true"></i> Serviços Específicos
+                        <i class="fa fa-wrench" aria-hidden="true"></i> Specific Services
                     </a>
                 </li>
             @endcan
             {{--SOCIAL MEDIA--}}
             @can('view-socialmedias')
                 <li>
-                    <a href='{{route('socialmedias.index')}}' alt='Mídias Socials' title='Mídias Socials'>
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i> Mídias Socials
+                    <a href='{{route('socialmedias.index')}}' alt='Social Medias' title='Social Medias'>
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i> Social Medias
                     </a>
                 </li>
             @endcan
             {{--TELEPHONE--}}
             @can('view-telephones')
                 <li>
-                    <a href='{{route('telephones.index')}}' alt='Telefones' title='Telefones'>
-                        <i class="fa fa-phone" aria-hidden="true"></i> Telefones
+                    <a href='{{route('telephones.index')}}' alt='Telephones' title='Telephones'>
+                        <i class="fa fa-phone" aria-hidden="true"></i> Telephones
                     </a>
                 </li>
             @endcan
             {{--CLIENTS--}}
             @can('view-services')
                 <li>
-                    <a href='{{route('clients.index')}}' alt='Clientes' title='Clientes'>
-                        <i class="fa fa-users" aria-hidden="true"></i> Clientes
+                    <a href='{{route('clients.index')}}' alt='Clients' title='Clients'>
+                        <i class="fa fa-users" aria-hidden="true"></i> Clients
                     </a>
                 </li>
             @endcan
             {{--Users--}}
             @can('view-users')
                 <li>
-                    <a href='{{route('users.index')}}' alt='Usuários' title='Usuários'>
-                        <i class="fa fa-user" aria-hidden="true"></i> Usuários
+                    <a href='{{route('users.index')}}' alt='Users' title='Users'>
+                        <i class="fa fa-user" aria-hidden="true"></i> Users
                     </a>
                 </li>
             @endcan
@@ -79,22 +79,22 @@
     </li>
 
     {{--BLOG--}}
-    <li class="dropdown">
+    {{--<li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             Blog  <span class="caret"></span>
         </a>
 
-        <ul class="dropdown-menu" role="menu">
+        <ul class="dropdown-menu" role="menu">--}}
             {{--POST_CATEGORIES--}}
-            @can('view-post_categories')
+            {{--@can('view-post_categories')
                 <li>
-                    <a href='{{route('post_categories.index')}}' alt='Categorias Post' title='Categorias Post'>
-                        <i class="fa fa-list" aria-hidden="true"></i> Categorias Post
+                    <a href='{{route('post_categories.index')}}' alt='Post Categories' title='Post Categories'>
+                        <i class="fa fa-list" aria-hidden="true"></i> Post Categories
                     </a>
                 </li>
-            @endcan
+            @endcan--}}
             {{--POSTS--}}
-            @can('view-posts')
+            {{--@can('view-posts')
                 <li>
                     <a href='{{url('/posts')}}' title='Posts' alt='Posts' title='Posts'>
                         <i class="fa fa-file-text"></i> Posts
@@ -102,17 +102,17 @@
                 </li>
             @endcan
         </ul>
-    </li>
+    </li>--}}
 
     {{--Landing Pages--}}
-    <li class="dropdown">
+    {{--<li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             Landing Pages  <span class="caret"></span>
         </a>
 
-        <ul class="dropdown-menu" role="menu">
+        <ul class="dropdown-menu" role="menu">--}}
             {{--Landing Pages--}}
-            @can('view-landing_pages')
+            {{--@can('view-landing_pages')
                 <li>
                     <a href='{{route('landing_pages.index')}}' alt='Landing Pages' title='Landing Pages'>
                         <i class="fa fa-file-text" aria-hidden="true"></i> Landing Pages
@@ -120,17 +120,17 @@
                 </li>
             @endcan
         </ul>
-    </li>
+    </li>--}}
 
     {{--E-books--}}
-    <li class="dropdown">
+    {{--<li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             E-books  <span class="caret"></span>
         </a>
 
-        <ul class="dropdown-menu" role="menu">
+        <ul class="dropdown-menu" role="menu">--}}
             {{--E-books--}}
-            @can('view-ebooks')
+            {{--@can('view-ebooks')
                 <li>
                     <a href='{{route('ebooks.index')}}' alt='E-books' title='E-books'>
                         <i class="fa fa-file-text" aria-hidden="true"></i> E-books
@@ -138,7 +138,7 @@
                 </li>
             @endcan
         </ul>
-    </li>
+    </li>--}}
 
     {{--Usuário--}}
     <li class="dropdown">

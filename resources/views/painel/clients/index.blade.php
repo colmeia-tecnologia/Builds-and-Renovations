@@ -2,13 +2,13 @@
 
 @section('content')
     <div class='col-md-12 text-center'>
-        <h1>Clientes</h1>
+        <h1>Clients</h1>
     </div>
 
     @can('create-clients')
         <div class='col-md-12 text-center'>
-            <a href='{{route('clients.create')}}' alt='Cadastrar' title='Cadastrar' class='btn btn-default'>
-                Cadastrar
+            <a href='{{route('clients.create')}}' alt='New' title='New' class='btn btn-default'>
+                New
             </a>
             <br/>
             <br/>
@@ -20,7 +20,7 @@
             <tr>
                 <th width="100px">Ações</th>
                 <th width="100px">ID</th>
-                <th>Nome</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
@@ -45,7 +45,7 @@
             @empty
             <tr>
                 <td colspan='3' class='text-center'>
-                    Nenhum Cliente cadastrado
+                    No Client
                 </td>
             </tr>
             @endforelse

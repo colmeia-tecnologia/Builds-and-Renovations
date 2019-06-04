@@ -1,6 +1,6 @@
 <div class='col-md-6'>
     <div class="input-group">
-        <span class="input-group-addon" id="name">Nome</span>
+        <span class="input-group-addon" id="name">Name</span>
         {!! Form::input('text', 'name', null, ['class' => 'form-control', 'aria-describedby' => 'name']) !!}
     </div>
 </div>
@@ -14,21 +14,21 @@
 
 <div class='col-md-6 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="password">Senha</span>
+        <span class="input-group-addon" id="password">Password</span>
         {!! Form::input('password', 'password', null, ['class' => 'form-control', 'aria-describedby' => 'password']) !!}
     </div>
 </div>
 
 <div class='col-md-6 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="confirmation">Confirmação</span>
+        <span class="input-group-addon" id="confirmation">Confirmation</span>
         {!! Form::input('password', 'confirmation', null, ['class' => 'form-control', 'aria-describedby' => 'confirmation']) !!}
     </div>
 </div>
 
 <div class='col-md-6 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="responsibility">Cargo</span>
+        <span class="input-group-addon" id="responsibility">Role</span>
         {!! Form::input('text', 'responsibility', null, ['class' => 'form-control', 'aria-describedby' => 'responsibility']) !!}
     </div>
 </div>
@@ -36,7 +36,7 @@
 {{--@if(\Route::current()->getName() == 'users.create')--}}
     <div class='col-md-6 margin-top'>
         <div class="input-group">
-            <span class="input-group-addon" id="role">Perfil</span>
+            <span class="input-group-addon" id="role">Profile</span>
             {!! Form::select('role', $roles, null, ['class' => 'form-control', 'aria-describedby' => 'role']) !!}
         </div>
     </div>
@@ -44,8 +44,8 @@
 
 <div class='col-md-6 margin-top'>
     <div class="input-group">
-        <span class="input-group-addon" id="active">Ativo</span>
-        {!! Form::select('active', ['1' => 'Ativo', '0' => 'Inativo'], null, ['class' => 'form-control', 'aria-describedby' => 'active']) !!}
+        <span class="input-group-addon" id="active">Active</span>
+        {!! Form::select('active', ['1' => 'Yes', '0' => 'No'], null, ['class' => 'form-control', 'aria-describedby' => 'active']) !!}
     </div>
 </div>
 
@@ -53,13 +53,13 @@
 
 @can('update-permissions')
     <div class='col-md-12'>
-        <h2 class='text-center'>Permissões</h2>
+        <h2 class='text-center'>Permissions</h2>
 
         <div class='table-responsive'>
             <table class='table table-striped table-bordered'>
                 <tr>
                     <td colspan='4' class='tableLabel'>
-                        Painel
+                        Panel
                     </td>
                 </tr>
                 <tr>
@@ -73,7 +73,7 @@
                             <tr>
                         @endif
 
-                        @if($permission->description == 'Visualizar categorias de posts')
+                        @if($permission->description == 'See posts categories')
                             <tr>
                                 <td colspan='4' class='tableLabel'>
                                     Blog
@@ -110,5 +110,5 @@
 @endcan
 
 <div class='col-md-12 text-center margin-top'>
-    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Salvar&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
+    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Save&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
 </div>

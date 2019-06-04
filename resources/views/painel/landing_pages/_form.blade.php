@@ -3,8 +3,8 @@
         @if(!isset($landingPage))
             <img 
                 src='{{ asset('img/template/painel/sem-imagem.jpg') }}' 
-                alt='Clique para selecionar a imagem' 
-                title='Clique para selecionar a imagem' 
+                alt='Click to select the image' 
+                title='Click to select the image' 
                 class='img-responsive'
                 id='image-uploaded'
             >
@@ -12,8 +12,8 @@
         @else
             <img 
                 src='{{$landingPage->image}}' 
-                alt='Clique para selecionar a imagem' 
-                title='Clique para selecionar a imagem' 
+                alt='Click to select the image' 
+                title='Click to select the image' 
                 class='img-responsive'
                 id='image-uploaded'
             >
@@ -72,7 +72,7 @@
 </div>
 
 <div class='col-md-12 text-center margin-top'>
-    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Salvar&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
+    {!! Form::button('<i class="fa fa-check" aria-hidden="true"></i> Save&nbsp;', ['type' => 'submit', 'class' => 'btn btn-primary']) !!}
 </div>
 
 @section('scripts')
