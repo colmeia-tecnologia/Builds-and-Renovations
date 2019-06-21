@@ -50,6 +50,10 @@
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
 
+        $('#contactFloat').click(function(){
+            $("html, body").animate({ scrollTop: $('#contact-form').position().top -200 }, "slow");
+        });
+
         $(document).ready(function(){
             //Carousel
             $('.carousel.carousel-slider').carousel({
@@ -70,25 +74,25 @@
 
             //Type slogan on banner
             typeSlogan();
-
-            @if($errors->any())
-                $('html,body').animate({
-                    scrollTop: $("#contact-form").offset().top - 100
-                }, 0);
-            @endif
-
-            @if(Session::has('status_mail') && Session::get('status_mail') == true)
-                M.toast({
-                    html: 'Email successfully sent!',
-                    classes: 'green accent-4'
-                });
-            @elseif(Session::has('status_mail') && Session::get('status_mail') == false)
-                M.toast({
-                    html: 'Failed to send E-mail.',
-                    classes: 'red'
-                });
-            @endif
         });
+
+        @if($errors->any())
+            $('html,body').animate({
+                scrollTop: $("#contact-form").offset().top - 100
+            }, 0);
+        @endif
+
+        @if(Session::has('status_mail') && Session::get('status_mail') == true)
+            M.toast({
+                html: 'Email successfully sent!',
+                classes: 'green accent-4'
+            });
+        @elseif(Session::has('status_mail') && Session::get('status_mail') == false)
+            M.toast({
+                html: 'Failed to send E-mail.',
+                classes: 'red'
+            });
+        @endif
     </script>
 
     @yield('scripts')
