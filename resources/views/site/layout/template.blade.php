@@ -74,6 +74,9 @@
 
             //Type slogan on banner
             typeSlogan();
+
+            //Parallax
+            $('.parallax').parallax();
         });
 
         @if($errors->any())

@@ -21,6 +21,16 @@ h1:after
     border-bottom: 5px solid $primary;
 }
 
+h1.no-border:after
+{
+    border-bottom: none !important;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
 .margin-bottom 
 {
     margin-bottom: 20px;

@@ -1,0 +1,29 @@
+// main: style.scss
+
+section#about
+{
+    padding-bottom: 0px;
+}
+
+div.whyContainer
+{
+    padding: 40px !important;
+    height: 900px !important;
+}
+
+div.whyText
+{
+    background-color: rgba(0,0,0,.6);
+    margin-top: 40px;
+    padding:40px !important;
+    padding-bottom: 20px !important;
+}
+
+div.whyText ul
+{
+    margin-left: 20px;
+}
+div.whyText ul li
+{
+    list-style-type: disc;
+}
