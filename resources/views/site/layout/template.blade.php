@@ -26,59 +26,12 @@
     {!! Html::script('/js/app.js') !!}
     {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js') !!}
     {!! Html::script('/js/common/jquery.maskedinput.min.js') !!}
+    {!! Html::script('/js/site/jquery.waypoints.min.js') !!}
     {!! Html::script('/js/common/jsMascaras.min.js') !!}
+    {!! Html::script('/js/site/animations.min.js') !!}
+    {!! Html::script('/js/site/home.min.js') !!}
 
     <script>
-        let indexSlogan = 0;
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 4500);
-        }
-
-        function typeSlogan()
-        {
-            var slogan = "Building your own paradise!";
-
-            if(indexSlogan < slogan.length) {
-                $('#slogan').append(slogan.charAt(indexSlogan));
-                indexSlogan++;
-                setTimeout(typeSlogan, 120);
-            }
-        }
-
-        $('#backToTop').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-        });
-
-        $('#contactFloat').click(function(){
-            $("html, body").animate({ scrollTop: $('#contact-form').position().top -200 }, "slow");
-        });
-
-        $(document).ready(function(){
-            //Carousel
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: false,
-            }).css(
-                "height", $(window).height() - 10
-            );
-            autoplay();
-
-            //Sticky Menu
-            $('.pushpin').pushpin({
-                top: $('.pushpin').offset().top
-            });
-
-            //ScroolSpy
-            $('.scrollspy').scrollSpy();
-
-            //Type slogan on banner
-            typeSlogan();
-
-            //Parallax
-            $('.parallax').parallax();
-        });
-
         @if($errors->any())
             $('html,body').animate({
                 scrollTop: $("#contact-form").offset().top - 100
@@ -97,6 +50,5 @@
             });
         @endif
     </script>
-
     @yield('scripts')
 </html>

@@ -20,7 +20,7 @@
                     32837
                 </p>
             </div>
-            <div class='col m6 s12' id='contact-form'>
+            <div class='col m6 s12 animated' id='contact-form'>
                 {!! Form::open(['route' => 'site.contact.send']) !!}
                     @include('site.forms.contact')
                 {!! Form::close() !!}
