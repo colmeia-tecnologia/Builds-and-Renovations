@@ -63,6 +63,10 @@ Route::group([
     Route::get('/contato', 'IndexController@index')->name('contato.index');
     Route::post('/contato/send', 'ContactController@send')->name('contact.send');
     Route::get('/portfolio/{id}', 'PortfolioController@show')->name('portfolio');
+
+    Route::get('/teste', function(){
+        return 'teste';
+    });
 });
 
 /*

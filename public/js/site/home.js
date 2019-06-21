@@ -33,7 +33,7 @@ $('.loadModal').click(function(event){
 
 $(document).ready(function(){
     //Carousel
-    $('.carousel.carousel-slider').carousel({
+    $('#carouselHome').carousel({
         fullWidth: true,
         indicators: false,
     }).css(

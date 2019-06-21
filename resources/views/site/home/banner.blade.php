@@ -1,4 +1,4 @@
-<div class="carousel carousel-slider center bannerHome">
+<div class="carousel carousel-slider center bannerHome" id='carouselHome'>
     <div class="carousel-fixed-item center">
         <div>
             <div class='row'>
