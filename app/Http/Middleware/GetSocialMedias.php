@@ -37,6 +37,6 @@ class GetSocialMedias
             ['url', '<>', null],
         ]);
 
-        Cache::forever('socialmedias', $socialMedias);
+        Cache::forever('socialMedias', $socialMedias);
     }
 }

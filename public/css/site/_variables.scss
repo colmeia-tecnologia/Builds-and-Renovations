@@ -1,0 +1,21 @@
+// main: style.scss
+
+$primary: #2D587B !important;
+$secondary: #F7CA34 !important;
+
+.primary
+{
+    background-color: $primary;
+}
+.secondary
+{
+    background-color: $secondary;
+}
+.primary-text
+{
+    color: $primary;
+}
+.secondary-text
+{
+    color: $secondary;
+}
