@@ -11,7 +11,15 @@ body
     overflow-x: hidden;
 }
 
-
+h1:after
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    padding-top: 10px;
+    border-bottom: 5px solid $primary;
+}
 
 .margin-bottom 
 {
@@ -73,6 +81,12 @@ body
     padding-top: 40px;
 }
 
+a.link
+{
+    text-decoration: underline;
+    color:black;
+}
+
 hr
 {
     border:             0;
@@ -93,11 +107,11 @@ hr.white
     background-image:   -o-linear-gradient(left,        rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
 }
 
-
 nav
 {
     background-color: $primary;
     height: 100px;
+    z-index: 10;
 }
 
 nav a.brand-logo img
@@ -111,10 +125,17 @@ nav ul li a
     font-size: .8em;
     padding: 18px;
 }
+nav ul li a.active {
+    color: $secondary;
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 main
 {
-    padding: 40px 0px;
+    padding: 0px;
+    padding-top: 40px;
+    z-index: 1;
 }
 
 footer

@@ -55,12 +55,13 @@ Route::group([
 
 Route::group([
                 'namespace' => 'Site',
-                'middleware' => ['getSocialMedia', 'getTelephones']
+                'middleware' => ['getSocialMedia', 'getTelephones'],
+                'as' => 'site.'
             ], function() 
 {
     Route::get('/', 'IndexController@index')->name('home');
     Route::get('/contato', 'IndexController@index')->name('contato.index');
-    Route::post('/contato/send', 'ContatoController@send')->name('contato.send');
+    Route::post('/contato/send', 'ContactController@send')->name('contact.send');
 });
 
 /*

@@ -15,9 +15,7 @@
             @include('site.layout.header')
             
             <main>
-                <div class='container'>
-                    @yield('content')
-                </div>
+                @yield('content')
             </main>
 
             @include('site.layout.footer')
@@ -27,6 +25,8 @@
     <!-- Scripts -->
     {!! Html::script('/js/app.js') !!}
     {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js') !!}
+    {!! Html::script('/js/common/jquery.maskedinput.min.js') !!}
+    {!! Html::script('/js/common/jsMascaras.min.js') !!}
 
     <script>
         let indexSlogan = 0;
@@ -70,9 +70,26 @@
 
             //Type slogan on banner
             typeSlogan();
+
+            @if($errors->any())
+                $('html,body').animate({
+                    scrollTop: $("#contact-form").offset().top - 100
+                }, 0);
+            @endif
+
+            @if(Session::has('status_mail') && Session::get('status_mail') == true)
+                M.toast({
+                    html: 'Email successfully sent!',
+                    classes: 'green accent-4'
+                });
+            @elseif(Session::has('status_mail') && Session::get('status_mail') == false)
+                M.toast({
+                    html: 'Failed to send E-mail.',
+                    classes: 'red'
+                });
+            @endif
         });
-
-
     </script>
+
     @yield('scripts')
 </html>

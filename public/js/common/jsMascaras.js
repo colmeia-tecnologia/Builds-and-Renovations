@@ -1,6 +1,6 @@
 jQuery(function($)
 {
-    $(".cnpj").mask("99.999.999/9999-99");
+    /*$(".cnpj").mask("99.999.999/9999-99");
     $(".cep").mask("99.999-999");
     $(".cpf").mask("999.999.999-99");
     $(".tempo").mask("99:99:99");
@@ -8,10 +8,14 @@ jQuery(function($)
         prefix: 'R$ ',
         centsSeparator: ',',
         thousandsSeparator: '.',
-    });
+    });*/
    
-    $(".telefone").mask("(99) 9999-9999?9");
-    $(".telefone").focusout(function(){
+    $(".telephone").mask("(999) 999-9999");
+    $(".telephone").blur(function(){
+        if($(this).val() == '')
+            $('#label-telephone').removeClass('active');
+    });
+    /*$(".telephone").focusout(function(){
         var phone, element;
         element = $(this);
         element.unmask();
@@ -21,7 +25,7 @@ jQuery(function($)
         } else {
             element.mask("(99) 9999-9999?9");
         }
-    }).trigger('focusout');
+    }).trigger('focusout');*/
 
-    $('.botao').prop("disabled", false);
+    //$('.botao').prop("disabled", false);
 });
