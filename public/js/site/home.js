@@ -23,6 +23,14 @@ $('#contactFloat').click(function(){
     $("html, body").animate({ scrollTop: $('#contact-form').position().top -200 }, "slow");
 });
 
+$('.loadModal').click(function(event){
+    var url = $(this).data('url');
+
+    $.get(url, function(data) {
+        $("#modal-content").html(data);
+    });
+});
+
 $(document).ready(function(){
     //Carousel
     $('.carousel.carousel-slider').carousel({
@@ -46,4 +54,7 @@ $(document).ready(function(){
 
     //Parallax
     $('.parallax').parallax();
+
+    //Modal
+    $('.modal').modal();
 });

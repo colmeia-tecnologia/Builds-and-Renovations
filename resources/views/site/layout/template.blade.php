@@ -9,6 +9,7 @@
     <body>
         <div id="app">
             @include('site.layout.float-button')
+            @include('site.layout.modal')
 
             @include('site.home.banner')
 

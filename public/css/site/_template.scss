@@ -21,6 +21,16 @@ h1:after
     border-bottom: 5px solid $primary;
 }
 
+h1.border-secondary:after
+{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 8%;
+    padding-top: 10px;
+    border-bottom: 5px solid $secondary;
+}
+
 h1.no-border:after
 {
     border-bottom: none !important;
@@ -144,7 +154,6 @@ nav ul li a.active {
 main
 {
     padding: 0px;
-    padding-top: 40px;
     z-index: 1;
 }
 

@@ -1,0 +1,12 @@
+// main: style.scss
+
+div.portfolioContainer img.portfolioImage
+{
+    filter: grayscale(100%);
+}
+
+div.portfolioContainer:hover img.portfolioImage
+{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}

@@ -8,9 +8,42 @@
     animation-fill-mode: both;
     opacity: 0;
 
-    transition: 1s;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
     transform-style: preserve-3d;
 }
+
+
+/*
+ * FADE IN
+ */
+@-webkit-keyframes fadeIn {
+    0% 
+    {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+} 
 
 /*
  * FADE IN LEFT

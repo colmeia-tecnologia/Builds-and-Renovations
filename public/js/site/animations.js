@@ -13,3 +13,15 @@ var contactDiv = $('#contact').waypoint({
     },
     offset: '25%'
 });
+
+var portfolioDiv = $('#portfolio').waypoint({
+    handler: function() {
+        $('.portfolioContainer').each(function(i){
+            var portfolio = $(this);
+            setTimeout(function() {
+                portfolio.addClass('fadeIn');
+            }, 300*i);
+        });
+    },
+    offset: '25%'
+});
