@@ -3,6 +3,8 @@
 div.portfolioContainer img.portfolioImage
 {
     filter: grayscale(100%);
+
+  transition: all 1s ease-in-out;
 }
 
 div.portfolioContainer:hover img.portfolioImage
