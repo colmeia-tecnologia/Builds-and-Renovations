@@ -1,0 +1,15 @@
+// main: style.scss
+
+div.servicesContainer
+{
+    padding:20px;
+    margin: 10px 0px;
+    transform: rotateY(180deg);
+}
+
+
+div.servicesContainerInside
+{
+    border: solid 3px $primary;
+    height: 250px;
+}

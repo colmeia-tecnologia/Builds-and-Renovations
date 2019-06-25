@@ -1,3 +1,15 @@
+var services = $('.servicesContainer').waypoint({
+    handler: function() {
+        $('.servicesContainer').each(function(i){
+            var service = $(this);
+            setTimeout(function() {
+                service.addClass('fliped');
+            }, 300*i);
+        });
+    },
+    offset: '25%'
+});
+
 var clientsList = $('#clientsList').waypoint({
     handler: function() {
         $('.clientsListLi').each(function(i){
