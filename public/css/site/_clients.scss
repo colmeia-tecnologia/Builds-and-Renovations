@@ -1,0 +1,36 @@
+// main: style.scss
+
+section#services
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.clientsContainer
+{
+    background-color: rgba(45,88,123,.3);
+    height: 450px;
+}
+
+
+div.clientsContainer ul.clientsList
+{
+    font-size: 1.3em;
+    font-weight: bolder;
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    text-align: right;
+}
+
+
+div.clientsContainer ul.clientsList li
+{
+    background-image: url('../../img/template/check.png');
+    background-repeat: no-repeat;
+    background-position: 100% 5%;
+    background-size: 1.5em;
+    padding-right: 55px;
+}

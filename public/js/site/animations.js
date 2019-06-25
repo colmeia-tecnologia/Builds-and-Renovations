@@ -1,3 +1,15 @@
+var clientsList = $('#clientsList').waypoint({
+    handler: function() {
+        $('.clientsListLi').each(function(i){
+            var client = $(this);
+            setTimeout(function() {
+                client.addClass('fadeIn');
+            }, 300*i);
+        });
+    },
+    offset: '50%'
+});
+
 var whyDiv = $('#whyDiv').waypoint({
     handler: function() {
         $('.whyText').addClass('fliped');
