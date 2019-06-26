@@ -6,12 +6,17 @@ div.subservicesContainer
     padding:20px;
     margin: 10px 0px;
     transform: rotateY(180deg);
+    position: relative;
+    text-align: center;
 }
 
 div.servicesContainerInside
 {
     border: solid 3px $primary;
     height: 250px;
+    position: relative;
+    display: block;
+    padding-top: 15%;
 }
 
 div.subservicesContainerInside
@@ -23,6 +28,7 @@ div.subservicesContainerInside
     text-align: center !important;
     padding: 20px;
     font-weight: bold;
+    display: inline-block;
 }
 
 div.subservicesContainerInside a.askNow

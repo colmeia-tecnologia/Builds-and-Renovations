@@ -2,19 +2,21 @@
     <h1 class='center'>Services</h1>
 
     <div class='row'>
-        <div class='col m4 servicesContainer animated' id='servicesContainer'>
-            <a href='/services/Builds And Renovations'>
-                <div class='center-align primary-text servicesContainerInside valign-wrapper'>
-                    <div class='row'>
-                        <div class='col s12'>
-                            <img src='/img/builds-and-renovations.png' alt='Builds and Renovations' class='img-responsive'>
-                        </div>
-                        <div class='col s12'>
-                            Builds and Renovations
+        @foreach ($services as $service)
+            <div class='col m4 servicesContainer animated' id='servicesContainer'>
+                <a href='/services/{{$service->name}}'>
+                    <div class='center-align primary-text servicesContainerInside valign-wrapper'>
+                        <div class='row'>
+                            <div class='col s12'>
+                                <img src='{{$service->image}}' alt='{{$service->name}}' class='img-responsive'>
+                            </div>
+                            <div class='col s12'>
+                                {{$service->name}}
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
+                </a>
+            </div>
+        @endforeach
     </div>
 </div>
