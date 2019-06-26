@@ -7,29 +7,34 @@ use App\Http\Controllers\Controller;
 use App\Criteria\Site\ActiveCriteria;
 use Illuminate\Support\Facades\Cache;
 use App\Repositories\BannerRepository;
+use App\Repositories\ClientRepository;
 use App\Repositories\ServiceRepository;
 
 class IndexController extends Controller
 {
     private $bannerRepository;
     private $serviceRepository;
+    private $clientRepository;
 
     public function __construct(
                                     BannerRepository $bannerRepository,
-                                    ServiceRepository $serviceRepository
+                                    ServiceRepository $serviceRepository,
+                                    ClientRepository $clientRepository
                                 )
     {   
         //Cache::flush();
         $this->bannerRepository = $bannerRepository;
         $this->serviceRepository = $serviceRepository;
+        $this->clientRepository = $clientRepository;
     }
 
     public function index()
     {
         $banners = $this->getBanners();
         $services = $this->getServices();
+        $clients = $this->getClients();
 
-        return view('site.index', compact ('banners', 'services'));
+        return view('site.index', compact ('banners', 'services', 'clients'));
     }
 
     private function getBanners()
@@ -40,7 +45,7 @@ class IndexController extends Controller
                         ->pushCriteria(new ActiveCriteria())
                         ->all();
 
-            $expiresAt = Carbon::now()->addDay();
+            $expiresAt = Carbon::now()->addWeek();
 
             Cache::add('banners', $banners, $expiresAt);
 
@@ -58,7 +63,7 @@ class IndexController extends Controller
                         ->pushCriteria(new ActiveCriteria())
                         ->all();
 
-            $expiresAt = Carbon::now()->addDay();
+            $expiresAt = Carbon::now()->addWeek();
 
             Cache::add('services', $services, $expiresAt);
 
@@ -66,5 +71,22 @@ class IndexController extends Controller
         }
 
         return Cache::get('services');
+    }
+
+    private function getClients()
+    {
+        if(!Cache::has('clients')) {
+            $clients = $this
+                        ->clientRepository
+                        ->all();
+
+            $expiresAt = Carbon::now()->addWeek();
+
+            Cache::add('clients', $clients, $expiresAt);
+
+            return $clients;
+        }
+
+        return Cache::get('clients');
     }
 }

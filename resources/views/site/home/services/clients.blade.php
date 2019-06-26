@@ -10,13 +10,9 @@
             </div>
             <div class='col m5 white-text right-align'>
                 <ul class='clientsList' id='clientsList'>
-                    <li class='animated clientsListLi'>Homes</li>
-                    <li class='animated clientsListLi'>Stores and Offices</li>
-                    <li class='animated clientsListLi'>Hotels</li>
-                    <li class='animated clientsListLi'>Shopping Centers</li>
-                    <li class='animated clientsListLi'>Townhouses</li>
-                    <li class='animated clientsListLi'>Industries</li>
-                    <li class='animated clientsListLi'>Comercial Centers</li>
+                    @foreach ($clients as $client)
+                        <li class='animated clientsListLi'>{{$client->name}}</li>
+                    @endforeach
                 </ul>
             </div>
         </div>
