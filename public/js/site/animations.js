@@ -7,7 +7,7 @@ var services = $('.servicesContainer').waypoint({
             }, 300*i);
         });
     },
-    offset: '25%'
+    offset: '50%'
 });
 
 var clientsList = $('#clientsList').waypoint({

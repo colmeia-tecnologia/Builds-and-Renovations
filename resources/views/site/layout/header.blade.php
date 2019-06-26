@@ -7,12 +7,23 @@
                 </a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#portfolio">Portfolio</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                 </ul>
             </div>
+        
+            <div class='right show-on-small menu'>
+                <i class="medium material-icons" id='menuIcon'>menu</i>
+            </div>
         </div>
+
+        <ul class='menuResponsive' id="menuResponsive">
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
     </nav>
 </header>

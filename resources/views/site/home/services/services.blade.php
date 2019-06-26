@@ -3,7 +3,7 @@
 
     <div class='row'>
         @foreach ($services as $service)
-            <div class='col m4 servicesContainer animated' id='servicesContainer'>
+            <div class='col m4 s6 servicesContainer animated' id='servicesContainer'>
                 <a href='/services/{{$service->name}}'>
                     <div class='center-align primary-text servicesContainerInside valign-wrapper'>
                         <div class='row'>

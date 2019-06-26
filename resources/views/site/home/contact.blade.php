@@ -3,7 +3,12 @@
         <h1 class='center'>Contact us</h1>
 
         <div class='row'>
-            <div class='col m6 s12'>
+            <div class='col m6 s12 push-m6 animated' id='contact-form'>
+                {!! Form::open(['route' => 'site.contact.send']) !!}
+                    @include('site.forms.contact')
+                {!! Form::close() !!}
+            </div>
+            <div class='col m6 s12 pull-m6'>
                 <p>
                     Send us your doubts, suggestions or ask for for a budget request without commitment.
                 </p>
@@ -23,11 +28,6 @@
                     Hunter’s Creek - Orlando - Florida<br/>
                     32837
                 </p>
-            </div>
-            <div class='col m6 s12 animated' id='contact-form'>
-                {!! Form::open(['route' => 'site.contact.send']) !!}
-                    @include('site.forms.contact')
-                {!! Form::close() !!}
             </div>
         </div>
     </div>

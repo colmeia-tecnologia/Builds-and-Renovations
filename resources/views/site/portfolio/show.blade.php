@@ -39,6 +39,8 @@
 
 <script>
     $(document).ready(function(){
-        $('#carouselModal').carousel();
+        $('#carouselModal').carousel({
+            numVisible: 3
+        });
     });
 </script>

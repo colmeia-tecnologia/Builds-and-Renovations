@@ -24,6 +24,7 @@
     {!! Html::script('/js/app.js') !!}
     {!! Html::script('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js') !!}
     {!! Html::script('/js/site/jquery.waypoints.min.js') !!}
+    {!! Html::script('/js/site/menu.min.js') !!}
     {!! Html::script('/js/site/animations.min.js') !!}
     {!! Html::script('/js/site/home.min.js') !!}
     @yield('scripts')

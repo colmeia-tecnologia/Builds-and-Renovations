@@ -8,6 +8,9 @@ div.subservicesContainer
     transform: rotateY(180deg);
     position: relative;
     text-align: center;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 div.servicesContainerInside

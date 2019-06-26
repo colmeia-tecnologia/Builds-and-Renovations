@@ -1,0 +1,342 @@
+// main: style.scss
+
+/*
+ * XL
+ */
+ @media (max-width: 1366px) 
+ {
+     
+ }
+ 
+ @media (max-width: 1201px) 
+ {
+    div.whyContainer
+    {
+        height: 1030px !important;
+    }
+ }
+ 
+ 
+ 
+ /*
+  * LG
+  */
+ @media (max-width: 1025px) 
+ {
+    div.whyContainer
+    {
+        height: 1080px !important;
+    }
+
+    h1
+    {
+        font-size: 2em;
+    }
+
+    div.clientsContainer ul.clientsList
+    {
+        font-size: 1.1em;
+    }
+
+    div.clientsContainer
+    {
+        height: 370px;
+    }
+
+    div.subservicesContainerInside
+    {
+        height: 200px;
+    }
+ }
+ 
+ 
+ 
+ /*
+  * MD
+  */ 
+ @media (max-width: 961px) 
+ {
+    div.whyContainer
+    {
+        height: 950px !important;
+    }
+
+    div.clientsContainer ul.clientsList
+    {
+        font-size: 1.2em;
+    }
+ }
+
+ @media (max-width: 801px) 
+ {
+    div.whyContainer
+    {
+        height: 1100px !important;
+    }
+
+    div.clientsContainer ul.clientsList
+    {
+        font-size: 1em;
+    }
+ }
+ 
+ @media(max-width: 769px)
+ {
+    div.whyContainer
+    {
+        height: 1150px !important;
+    }
+
+    div.subservicesContainerInside
+    {
+        height: 230px;
+    }
+ }
+ 
+ @media(max-width: 738px)
+ {
+    div.clientsContainer ul.clientsList
+    {
+        font-size: .95em;
+    }
+
+    div.clientsContainer
+    {
+        height: 350px;
+    }
+
+    div.whyContainer
+    {
+        height: 1220px !important;
+    }
+
+    div.subservicesContainerInside
+    {
+        font-size: .95em;
+    }
+ }
+
+ @media(max-width: 668px)
+ {
+    div.clientsContainer
+    {
+        height: 370px;
+    }
+    div.clientsContainer ul.clientsList
+    {
+        font-size: .85em;
+    }
+
+    h1
+    {
+        font-size: 1.7em;
+    }
+
+    div.whyContainer
+    {
+        height: 1470px !important;
+    }
+ }
+ 
+ @media(max-width: 641px)
+ {
+    div.clientsContainer
+    {
+        height: 390px;
+    }
+ }
+ 
+ 
+ 
+ /*
+  * SM
+  */
+ @media(max-width: 601px)
+ {
+    div.clientsContainer
+    {
+        height: 750px;
+    }
+
+    div.clientsContainer ul.clientsList
+    {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    div.clientsContainer ul.clientsList li
+    {
+        padding-right: 0px;
+    }
+    h1
+    {
+        font-size: 2.5em;
+    }
+
+    div.whyContainer
+    {
+        height: 1070px !important;
+    }
+
+    div.subservicesContainerInside
+    {
+        height: 170px;
+    }
+ }
+ 
+ @media(max-width: 568px)
+ {
+    div.whyContainer
+    {
+        height: 1120px !important;
+    }
+    div.clientsContainer
+    {
+        height: 750px;
+    }
+ }
+
+ @media(max-width: 480px)
+ {
+    div.clientsContainer
+    {
+        height: 700px;
+    }
+    div.whyContainer
+    {
+        height: 1230px !important;
+    }
+ }
+ 
+ @media(max-width: 414px)
+ {
+    nav a.brand-logo img {
+        height: 100px;
+    }
+
+    nav i.medium
+    {
+        font-size: 2em !important;
+    }
+    nav
+    {
+        background-color: $primary;
+        height: 80px;
+    }
+    div.bannerHome 
+    {
+        height: 400px !important;
+    }
+    div.clientsContainer
+    {
+        height: 670px;
+    }
+    div.whyContainer
+    {
+        height: 1350px !important;
+    }
+    h1
+    {
+        font-size: 2.3em;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    div.banner-logo h2
+    {
+        font-size: 2.5rem;
+    }
+ }
+ 
+ @media(max-width: 384px)
+ {
+
+    div.clientsContainer
+    {
+        height: 650px;
+    }
+    div.whyContainer
+    {
+        height: 1580px !important;
+    }
+ }
+ 
+ @media(max-width: 375px)
+ {
+
+    div.bannerHome 
+    {
+        height: 500px !important;
+    }
+    div.clientsContainer
+    {
+        height: 600px;
+    }
+    div.clientsContainer ul.clientsList
+    {
+        font-size: 1.1em;
+    }
+    div.whyContainer
+    {
+        height: 1600px !important;
+    }
+
+    div.subservicesContainerInside
+    {
+        height: 200px;
+    }
+    h1
+    {
+        font-size: 2em;
+    }
+ }
+ 
+ @media(max-width: 360px)
+ {
+
+    div.clientsContainer
+    {
+        height: 590px;
+    }
+    div.whyContainer
+    {
+        height: 1680px !important;
+    }
+ }
+ 
+ @media(max-width: 320px)
+ {
+    div.clientsContainer ul.clientsList
+    {
+        font-size: 1em;
+    }
+    div.clientsContainer
+    {
+        height: 540px;
+    }
+    div.whyContainer
+    {
+        height: 1750px !important;
+    }
+
+    div.subservicesContainerInside
+    {
+        height: 250px;
+    }
+
+
+    nav a.brand-logo img {
+        height: 80px;
+    }
+
+    nav
+    {
+        height: 60px;
+    }
+
+    nav div.menu
+    {
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+ }

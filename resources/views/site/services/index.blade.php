@@ -8,7 +8,7 @@
             </div>
             
             @foreach ($service->subservices as $subservice)
-                <div class='col m3 s12 subservicesContainer animated center-align '>
+                <div class='col m3 s6 subservicesContainer animated center-align '>
                         <div class='primary white-text subservicesContainerInside'>
                             <span class='center-align'>{{$subservice->name}}</span><br/>
 

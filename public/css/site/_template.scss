@@ -105,6 +105,10 @@ a.link
 {
     text-decoration: underline;
     color:black;
+
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 hr
@@ -149,6 +153,42 @@ nav ul li a.active {
     color: $secondary;
     text-decoration: underline;
     font-weight: bold;
+}
+
+nav div.menu
+{
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+nav i.medium
+{
+    font-size: 3em !important;
+}
+
+nav ul.menuResponsive
+{
+    background-color: $primary;
+    color:white;
+    z-index: 999999 !important;
+}
+nav ul.menuResponsive li
+{
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 0px !important;
+    border-top: 1px solid white;
+}
+nav ul.menuResponsive li a
+{
+    padding: 0px !important;
+}
+nav ul.menuResponsive li a.active
+{
+    color:white !important;
+    text-decoration: none !important;
+    font-weight: normal;
 }
 
 main
