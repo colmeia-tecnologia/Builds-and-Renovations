@@ -58,6 +58,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'getSocialMedia' => \App\Http\Middleware\GetSocialMedias::class,
         'getTelephones' => \App\Http\Middleware\GetTelephones::class,
+        'getEmails' => \App\Http\Middleware\GetEmails::class,
         'activeUser' => \App\Http\Middleware\VerifyActiveUser::class,
     ];
 }

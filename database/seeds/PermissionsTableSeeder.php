@@ -20,6 +20,7 @@ class PermissionsTableSeeder extends Seeder
                         'clients'           => 'clients',
                         'socialmedias'      => 'social medias',
                         'telephones'        => 'telephones',
+                        'emails'            => 'emails',
                         'users'             => 'users',
                         'permissions'       => 'permissions',
                         //Blog

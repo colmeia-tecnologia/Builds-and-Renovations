@@ -31,6 +31,7 @@ Route::group([
     Route::resource('clients', 'ClientController');
     Route::resource('socialmedias', 'SocialMediaController');
     Route::resource('telephones', 'TelephoneController');
+    Route::resource('emails', 'EmailController');
     Route::resource('users', 'UserController');
     
     Route::resource('post_categories', 'PostCategoryController');
@@ -55,7 +56,7 @@ Route::group([
 
 Route::group([
                 'namespace' => 'Site',
-                'middleware' => ['getSocialMedia', 'getTelephones'],
+                'middleware' => ['getSocialMedia', 'getTelephones', 'getEmails'],
                 'as' => 'site.'
             ], function() 
 {

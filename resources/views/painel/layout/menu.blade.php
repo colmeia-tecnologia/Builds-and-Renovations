@@ -53,6 +53,14 @@
                     </a>
                 </li>
             @endcan
+            {{--EMAIL--}}
+            @can('view-emails')
+                <li>
+                    <a href='{{route('emails.index')}}' alt='Emails' title='Emails'>
+                        <i class="fa fa-at" aria-hidden="true"></i> Emails
+                    </a>
+                </li>
+            @endcan
             {{--CLIENTS--}}
             @can('view-services')
                 <li>

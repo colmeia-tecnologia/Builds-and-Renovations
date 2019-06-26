@@ -9,7 +9,9 @@
                 </p>
 
                 <p>
-                    <a href='mailto:sales@buildsandrenovations.com' class='link'>sales@buildsandrenovations.com</a>
+                    @foreach (Cache::get('emails') as $email)
+                        <a href='mailto:{{$email->email}}' class='link'>{{$email->email}}</a><br/>
+                    @endforeach
                 </p>
                 <p>
                     @foreach (Cache::get('telephones') as $telephone)
