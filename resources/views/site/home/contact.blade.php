@@ -12,7 +12,9 @@
                     <a href='mailto:sales@buildsandrenovations.com' class='link'>sales@buildsandrenovations.com</a>
                 </p>
                 <p>
-                    <a href='tel:+1 (407) 730-1133' class='link'>+1 (407) 730-1133</a>
+                    @foreach (Cache::get('telephones') as $telephone)
+                        <a href='tel:{{$telephone->telephone}}' class='link'>{{$telephone->telephone}}</a><br/>
+                    @endforeach
                 </p>
                 <p>
                     4213 Summit Creek Boulevard #7308<br/> 
