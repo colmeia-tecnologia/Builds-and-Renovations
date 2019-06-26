@@ -33,11 +33,11 @@ class ClientRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'name.required' => 'O campo "Nome" é obrigatório',
             'name.max' => 'O campo "Nome" não deve ser maior do que :max caracteres',
-        ];*/
-    }
+        ];
+    }*/
 }

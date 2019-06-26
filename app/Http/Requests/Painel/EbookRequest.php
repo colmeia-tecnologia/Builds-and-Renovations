@@ -36,9 +36,9 @@ class EbookRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'title.required' => 'O campo "Título" é obrigatório',
 
             'image.required' => 'O campo "Imagem" é obrigatório',
@@ -48,6 +48,6 @@ class EbookRequest extends FormRequest
             'landing_page_id.required' => 'O campo "Landing Page" é obrigatório',
             'landing_page_id.numeric' => 'O campo "Landing Page" deve ser numérico',
             'landing_page_id.exists' => '"Landing Page" não encontrada',
-        ];*/
-    }
+        ];
+    }*/
 }

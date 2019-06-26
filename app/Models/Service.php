@@ -21,7 +21,10 @@ class Service extends Model implements Transformable
      * @var array
      */
     protected $fillable = [
-        'name', 'image', 'color', 'active'
+        'name', 
+        'image', 
+        //'color', 
+        'active'
     ];
     
     /*
@@ -30,7 +33,11 @@ class Service extends Model implements Transformable
      * @var array
      */
     protected static $logAttributes = [
-        'id', 'name', 'image', 'color', 'active'
+        'id', 
+        'name', 
+        'image', 
+        //'color', 
+        'active'
     ];
 
     /**

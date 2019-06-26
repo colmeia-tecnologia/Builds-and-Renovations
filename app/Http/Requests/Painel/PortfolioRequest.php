@@ -35,9 +35,9 @@ class PortfolioRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'name.required' => 'O campo "Nome" é obrigatório',
             'name.max' => 'O campo "Nome" não deve ser maior do que :max caracteres',
 
@@ -45,6 +45,6 @@ class PortfolioRequest extends FormRequest
 
             'url.required' => 'O campo "URL" é obrigatório',
             'url.required' => 'O campo "Url" deve ser uma URL válida',
-        ];*/
-    }
+        ];
+    }*/
 }

@@ -34,13 +34,13 @@ class BannerRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'title.required' => 'O campo "Título" é obrigatório',
             'title.max' => 'O campo "Título" não deve ser maior do que :max caracteres',
 
             'image.required' => 'O campo "Descrição" é obrigatório',
-        ];*/
-    }
+        ];
+    }*/
 }

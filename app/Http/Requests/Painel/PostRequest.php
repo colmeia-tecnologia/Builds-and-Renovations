@@ -36,9 +36,9 @@ class PostRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'title.required' => 'O campo "Título" é obrigatório',
             'title.max' => 'O campo "Título" não deve ser maior do que :max caracteres',
 
@@ -48,6 +48,6 @@ class PostRequest extends FormRequest
             'text.required' => 'O campo "Texto" é obrigatório',
 
             'image.required' => 'O campo "Imagem" é obrigatório',
-        ];*/
-    }
+        ];
+    }*/
 }

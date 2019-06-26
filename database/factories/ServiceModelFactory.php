@@ -18,6 +18,6 @@ $factory->define(App\Models\Service::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'image' => $faker->imageUrl,
-        'color' => $faker->hexcolor,
+        //'color' => $faker->hexcolor,
     ];
 });

@@ -33,9 +33,9 @@ class UserUpdateRequest extends FormRequest
         ];
     }
 
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'name.required' => 'O campo "Nome" é obrigatório',
             'name.max' => 'O campo "Nome" não deve ser maior do que :max caracteres',
 
@@ -44,6 +44,6 @@ class UserUpdateRequest extends FormRequest
             //'email.unique' => 'E-mail já cadastrado',
 
             'password.same' => 'O campo "Senha" deve ser igual ao campo "Confirmação de senha"',
-        ];*/
-    }
+        ];
+    }*/
 }

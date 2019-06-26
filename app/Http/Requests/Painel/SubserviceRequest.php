@@ -34,14 +34,14 @@ class SubserviceRequest extends FormRequest
      *
      * @return array
      */
-    public function messages()
+    /*public function messages()
     {
-        /*return [
+        return [
             'service_id.required' => 'O campo "Serviço" é obrigatório',
             'service_id.integer' => 'O campo "Serviço" deve ser um número inteiro',
 
             'name.required' => 'O campo "Nome" é obrigatório',
             'name.max' => 'O campo "Nome" não deve ser maior do que :max caracteres',
-        ];*/
-    }
+        ];
+    }*/
 }
