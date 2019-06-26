@@ -13,10 +13,31 @@ class BannerTableSeeder extends Seeder
     public function run()
     {
         factory(Banner::class)->create([
-            'name' => 'Facebook',
-            'url' => 'https://www.facebook.com/Builds-and-Renovations-2160977420606305/',
-            'icon' => '<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span>',
-            'active' => 1,
+            'title' => 'Banner 1',
+            'description' => 'Banner 1',
+            'image' => ENV('APP_URL').'/img/banner-1.jpg',
+            'order' => 1,
+        ]);
+
+        factory(Banner::class)->create([
+            'title' => 'Banner 2',
+            'description' => 'Banner 2',
+            'image' => ENV('APP_URL').'/img/banner-2.jpg',
+            'order' => 1,
+        ]);
+
+        factory(Banner::class)->create([
+            'title' => 'Banner 3',
+            'description' => 'Banner 3',
+            'image' => ENV('APP_URL').'/img/banner-3.jpg',
+            'order' => 1,
+        ]);
+
+        factory(Banner::class)->create([
+            'title' => 'Banner 4',
+            'description' => 'Banner 4',
+            'image' => ENV('APP_URL').'/img/banner-4.jpg',
+            'order' => 1,
         ]);
     }
 }
