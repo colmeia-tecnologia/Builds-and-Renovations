@@ -10,18 +10,16 @@ use App\Repositories\SubserviceRepository;
 class ServiceController extends Controller
 {
     private $repository;
-    private $subServiceRepository;
 
-    public function __construct(ServiceRepository $repository, SubserviceRepository $subServiceRepository)
+    public function __construct(ServiceRepository $repository)
     {
         $this->repository = $repository;
-        $this->subServiceRepository = $subServiceRepository;
     }
 
-    public function index($service)
+    public function index($serviceName)
     {
-        $subservices = $this->subServiceRepository->with('service')->findWhere(['service.name' => $service]);
+        $service = $this->repository->with(['subservices'])->findWhere([['name', 'like', $serviceName]])->first();
 
-        return view('site.services.index', compact('services'));
+        return view('site.services.index', compact('service'));
     }
 }

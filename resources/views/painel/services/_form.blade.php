@@ -1,6 +1,6 @@
 <div class='col-md-4'>
     <a data-toggle="modal" href="/upload" data-target="#uploadModal">
-        @if(!isset($banner))
+        @if(!isset($service))
             <img 
                 src='{{ asset('img/template/painel/sem-imagem.jpg') }}' 
                 alt='Click to select the image' 
@@ -11,7 +11,7 @@
             {!! Form::input('hidden', 'image', null, ['id' => 'image']) !!}
         @else
             <img 
-                src='{{$banner->image}}' 
+                src='{{$service->image}}' 
                 alt='Click to select the image' 
                 title='Click to select the image' 
                 class='img-responsive'
@@ -31,14 +31,14 @@
     </div>
 </div>
 
-<div class='col-md-4 margin-top'>
+{{--<div class='col-md-4 margin-top'>
     <div class="input-group">
         <span class="input-group-addon" id="color">Background Color</span>
         {!! Form::input('color', 'color', null, ['class' => 'form-control', 'aria-describedby' => 'color']) !!}
     </div>
-</div>
+</div>--}}
 
-<div class='col-md-4 margin-top'>
+<div class='col-md-8 margin-top'>
     <div class="input-group">
         <span class="input-group-addon" id="active">Active</span>
         {!! Form::select('active', ['1' => 'Yes', '0' => 'No'], null, ['class' => 'form-control', 'aria-describedby' => 'active']) !!}

@@ -3,7 +3,7 @@
         <div class="nav-wrapper">      
             <div class="container">
                 <a href="/" class="brand-logo">
-                    <img src='img/logo-2.png' alt='Builds and Renovations' class='nav-img'>
+                    <img src='/img/logo-2.png' alt='Builds and Renovations' class='nav-img'>
                 </a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">

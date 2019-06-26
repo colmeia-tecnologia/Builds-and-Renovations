@@ -2,7 +2,7 @@
     <h1 class='center'>Services</h1>
 
     <div class='row'>
-        <div class='col m4 servicesContainer animated'>
+        <div class='col m4 servicesContainer animated' id='servicesContainer'>
             <a href='/services/Builds And Renovations'>
                 <div class='center-align primary-text servicesContainerInside valign-wrapper'>
                     <div class='row'>

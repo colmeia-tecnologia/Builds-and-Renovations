@@ -1,15 +1,63 @@
 // main: style.scss
 
-div.servicesContainer
+div.servicesContainer,
+div.subservicesContainer
 {
     padding:20px;
     margin: 10px 0px;
     transform: rotateY(180deg);
 }
 
-
 div.servicesContainerInside
 {
     border: solid 3px $primary;
     height: 250px;
+}
+
+div.subservicesContainerInside
+{
+    position: relative;
+    width: 100%;
+    border: solid 3px $primary;
+    height: 170px;
+    text-align: center !important;
+    padding: 20px;
+}
+
+div.subservicesContainerInside a.askNow
+{
+    padding: 3px;
+    position: absolute;
+    bottom: 10px;
+    width: 70%;
+    left: 15%;
+    font-weight: bold;
+    border: 1px solid $secondary;
+
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+div.subservicesContainerInside a.askNow:hover
+{
+    background-color: $primary;
+    color: $secondary;
+    border: 2px solid $secondary;
+}
+
+a.back
+{
+    position:relative;
+    background-color: $primary;
+    color: $secondary;
+    padding:20px 10px;
+}
+
+a.back i
+{
+    position: relative;
+    top: 20px;
 }

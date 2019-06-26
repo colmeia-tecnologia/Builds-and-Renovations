@@ -22,7 +22,7 @@
                 <th width="100px">ID</th>
                 <th>Name</th>
                 <th width="100px">Image</th>
-                <th width="50px">Color</th>
+                {{--<th width="50px">Color</th>--}}
                 <th width="100px">Active</th>
             </tr>
         </thead>
@@ -45,7 +45,7 @@
                 <td>{{$service->id}}</td>
                 <td>{{$service->name}}</td>
                 <td><img src='{{$service->image}}' class='img-responsive'></td>
-                <td style='background-color: {!! $service->color !!}'></td>
+                {{--<td style='background-color: {!! $service->color !!}'></td>--}}
                 <td>
                     @php
                         $checked = '';
