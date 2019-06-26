@@ -15,6 +15,8 @@
 @endsection
 
 @section('scripts') 
+    {!! Html::script('/js/common/jquery.maskedinput.min.js') !!}
+    {!! Html::script('/js/common/jsMascaras.min.js') !!}
     <script>
         $('#service').val('{{$service}}');
         $('#subservice').val('{{$subservice}}');
