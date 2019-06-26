@@ -64,7 +64,10 @@ Route::group([
     Route::post('/contato/send', 'ContactController@send')->name('contact.send');
     Route::get('/portfolio/{id}', 'PortfolioController@show')->name('portfolio');
 
+    Route::get('/services/search/{service}', 'ServiceController@search')->name('services.search');
     Route::get('/services/{service}', 'ServiceController@index')->name('services.index');
+    Route::get('/services/{service}/{subservice}', 'ServiceController@form')->name('services.form');
+    Route::post('/services/send', 'ServiceController@send')->name('services.send');
 
     Route::get('/teste', function(){
         return 'teste';
