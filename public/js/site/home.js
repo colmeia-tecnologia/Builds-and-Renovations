@@ -6,7 +6,7 @@ function autoplay() {
 
 function typeSlogan()
 {
-    var slogan = "Building your own paradise!";
+    var slogan = "Build your own paradise!";
 
     if(indexSlogan < slogan.length) {
         $('#slogan').append(slogan.charAt(indexSlogan));
