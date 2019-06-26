@@ -11,17 +11,11 @@
             <a class="btn btn-large waves-effect white-text primary" href='#contact'>Contact</a>
         </div>
     </div>
-    <div class="carousel-item">
-        <img src='/img/banner-1.jpg' class='responsive-img'>
-    </div>
-    <div class="carousel-item">
-        <img src='/img/banner-2.jpg' class='responsive-img'>
-    </div>
-    <div class="carousel-item">
-        <img src='/img/banner-3.jpg' class='responsive-img'>
-    </div>
-    <div class="carousel-item">
-        <img src='/img/banner-4.jpg' class='responsive-img'>
-    </div>
+
+    @foreach ($banners as $banner)
+        <div class="carousel-item">
+            <img src='{{$banner->image}}' class='responsive-img'>
+        </div>
+    @endforeach
 </div>
         
