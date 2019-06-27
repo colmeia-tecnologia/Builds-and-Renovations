@@ -48,7 +48,7 @@ class Portfolio extends Model implements Transformable
 
     public function images()
     {
-        return $this->hasMany(PortfolioImage::class, 'portfolio_id');
+        return $this->hasMany(PortfolioImage::class, 'portfolio_id')->orderBy('order');
     }
 
     /**

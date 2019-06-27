@@ -10,6 +10,7 @@ use App\Repositories\BannerRepository;
 use App\Repositories\ClientRepository;
 use App\Repositories\ServiceRepository;
 use App\Repositories\VideoRepository;
+use App\Repositories\PortfolioRepository;
 
 class IndexController extends Controller
 {
@@ -17,12 +18,14 @@ class IndexController extends Controller
     private $serviceRepository;
     private $clientRepository;
     private $videoRepository;
+    private $portfolioRepository;
 
     public function __construct(
                                     BannerRepository $bannerRepository,
                                     ServiceRepository $serviceRepository,
                                     ClientRepository $clientRepository,
-                                    VideoRepository $videoRepository
+                                    VideoRepository $videoRepository,
+                                    PortfolioRepository $portfolioRepository
                                 )
     {   
         //Cache::flush();
@@ -30,6 +33,7 @@ class IndexController extends Controller
         $this->serviceRepository = $serviceRepository;
         $this->clientRepository = $clientRepository;
         $this->videoRepository = $videoRepository;
+        $this->portfolioRepository = $portfolioRepository;
     }
 
     public function index()
@@ -38,8 +42,9 @@ class IndexController extends Controller
         $services = $this->getServices();
         $clients = $this->getClients();
         $video = $this->getVideo();
+        $portfolios = $this->getPortfolios();
 
-        return view('site.index', compact ('banners', 'services', 'clients', 'video'));
+        return view('site.index', compact ('banners', 'services', 'clients', 'video', 'portfolios'));
     }
 
     private function getBanners()
@@ -112,5 +117,23 @@ class IndexController extends Controller
         }
 
         return Cache::get('video');
+    }
+
+    private function getPortfolios()
+    {
+        if(!Cache::has('portfolios')) {
+            $portfolios = $this
+                        ->portfolioRepository
+                        ->pushCriteria(new ActiveCriteria())
+                        ->all();
+
+            $expiresAt = Carbon::now()->addWeek();
+
+            Cache::add('portfolios', $portfolios, $expiresAt);
+
+            return $portfolios;
+        }
+
+        return Cache::get('portfolios');
     }
 }

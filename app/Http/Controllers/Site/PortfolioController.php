@@ -15,8 +15,10 @@ class PortfolioController extends Controller
         $this->repository = $repository;
     }
 
-    public function show()
+    public function show($id)
     {
-        return view('site.portfolio.show');
+        $portfolio = $this->repository->find($id);
+        
+        return view('site.portfolio.show', compact('portfolio'));
     }
 }
