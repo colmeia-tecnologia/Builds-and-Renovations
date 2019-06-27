@@ -15,7 +15,7 @@
                     @endforeach
                 </ul>
             </div>
-            <div class='col m5 s12 white-text center-align show-on-small'>
+            <div class='col m5 s12 white-text center-align show-on-small hide-on-med-and-up'>
                 <ul class='clientsList' id='clientsList'>
                     @foreach ($clients as $client)
                         <li class='animated clientsListLi'>{{$client->name}}</li>
