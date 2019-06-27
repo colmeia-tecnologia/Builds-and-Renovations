@@ -29,6 +29,7 @@ Route::group([
     Route::resource('subservices', 'SubserviceController');
     Route::resource('portfolios', 'PortfolioController');
     Route::resource('clients', 'ClientController');
+    Route::resource('videos', 'VideoController');
     Route::resource('socialmedias', 'SocialMediaController');
     Route::resource('telephones', 'TelephoneController');
     Route::resource('emails', 'EmailController');
@@ -48,6 +49,11 @@ Route::group([
 
     //Ativo/Inativo
     Route::post('/activate-inactivate', 'ActivateController@activateInactivate')->name('activate-inactivate');
+
+    //Validações Video
+    Route::post('videos/verificaUrlCurta', 'VideoController@verifyShortenUrl')->name('videos.verificaUrlCurta');
+    Route::post('videos/verificaUrlYoutubeValida', 'VideoController@verifyValidYoutubeUrl')->name('videos.verificaUrlYoutubeValida');
+    Route::post('videos/obtemImagemYoutube', 'VideoController@getYoutubeThumb')->name('videos.obtemImagemYoutube');
 });
 
 /*

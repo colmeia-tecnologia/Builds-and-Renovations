@@ -18,6 +18,7 @@ class PermissionsTableSeeder extends Seeder
                         'services'          => 'services categories',
                         'subservices'       => 'specific services',
                         'clients'           => 'clients',
+                        'videos'            => 'videos',
                         'socialmedias'      => 'social medias',
                         'telephones'        => 'telephones',
                         'emails'            => 'emails',

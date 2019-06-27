@@ -87,6 +87,10 @@ class RepositoryServiceProvider extends ServiceProvider
                 \App\Repositories\EmailRepository::class, 
                 \App\Repositories\EmailRepositoryEloquent::class
         );
+        $this->app->bind(
+                \App\Repositories\VideoRepository::class, 
+                \App\Repositories\VideoRepositoryEloquent::class
+        );
         //:end-bindings:
     }
 }
