@@ -9,23 +9,27 @@ use Illuminate\Support\Facades\Cache;
 use App\Repositories\BannerRepository;
 use App\Repositories\ClientRepository;
 use App\Repositories\ServiceRepository;
+use App\Repositories\VideoRepository;
 
 class IndexController extends Controller
 {
     private $bannerRepository;
     private $serviceRepository;
     private $clientRepository;
+    private $videoRepository;
 
     public function __construct(
                                     BannerRepository $bannerRepository,
                                     ServiceRepository $serviceRepository,
-                                    ClientRepository $clientRepository
+                                    ClientRepository $clientRepository,
+                                    VideoRepository $videoRepository
                                 )
     {   
         //Cache::flush();
         $this->bannerRepository = $bannerRepository;
         $this->serviceRepository = $serviceRepository;
         $this->clientRepository = $clientRepository;
+        $this->videoRepository = $videoRepository;
     }
 
     public function index()
@@ -33,8 +37,9 @@ class IndexController extends Controller
         $banners = $this->getBanners();
         $services = $this->getServices();
         $clients = $this->getClients();
+        $video = $this->getVideo();
 
-        return view('site.index', compact ('banners', 'services', 'clients'));
+        return view('site.index', compact ('banners', 'services', 'clients', 'video'));
     }
 
     private function getBanners()
@@ -88,5 +93,24 @@ class IndexController extends Controller
         }
 
         return Cache::get('clients');
+    }
+
+    private function getVideo()
+    {
+        if(!Cache::has('video')) {
+            $video = $this
+                        ->videoRepository
+                        ->pushCriteria(new ActiveCriteria())
+                        ->orderBy('id', 'desc')
+                        ->first();
+
+            $expiresAt = Carbon::now()->addWeek();
+
+            Cache::add('video', $video, $expiresAt);
+
+            return $video;
+        }
+
+        return Cache::get('video');
     }
 }

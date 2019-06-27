@@ -5,7 +5,7 @@
         <div class='row'>
             <div class='col m7 s12'>
                 <div class="video-container margin-top-g">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/i9-XM4PiMb4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="853" height="480" src="{{$video->url}}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class='col m5 s12 white-text right-align hide-on-small-only'>
