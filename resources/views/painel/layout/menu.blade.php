@@ -15,13 +15,13 @@
                 </li>
             @endcan
             {{--PORTFOLIO--}}
-            {{--@can('view-portfolios')
+            @can('view-portfolios')
                 <li>
-                    <a href='{{url('/portfolios')}}' alt='Portifólios' title='Portifólios'>
-                        <i class="fa fa-camera" aria-hidden="true"></i> Portifólios
+                    <a href='{{url('/portfolios')}}' alt='Portfolio' title='Portfolio'>
+                        <i class="fa fa-camera" aria-hidden="true"></i> Portfolio
                     </a>
                 </li>
-            @endcan--}}
+            @endcan
             {{--SERVICES--}}
             @can('view-services')
                 <li>

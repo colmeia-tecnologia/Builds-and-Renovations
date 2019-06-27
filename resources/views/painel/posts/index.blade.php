@@ -18,12 +18,12 @@
     <table class="table table-responsive table-striped table-bordered table-hovered">
         <thead>
             <tr>
-                <th width="100px">Ações</th>
+                <th width="100px">Actions</th>
                 <th width="100px">ID</th>
                 <th>Titulo</th>
                 <th>Descrição</th>
-                <th width="150px">Imagem</th>
-                <th width="100px">Ativo</th>
+                <th width="150px">Image</th>
+                <th width="100px">Active</th>
             </tr>
         </thead>
         <tbody>

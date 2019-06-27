@@ -20,7 +20,10 @@ class Portfolio extends Model implements Transformable
      * @var array
      */
     protected $fillable = [
-        'name', 'url', 'image', 'active'
+        'title',
+        'text',
+        'url',
+        'active',
     ];
     
     /*
@@ -29,7 +32,11 @@ class Portfolio extends Model implements Transformable
      * @var array
      */
     protected static $logAttributes = [
-        'id', 'name', 'url', 'image', 'active'
+        'id', 
+        'title',
+        'text',
+        'url',
+        'active',
     ];
 
     /**
@@ -38,5 +45,28 @@ class Portfolio extends Model implements Transformable
      * @var array
      */
     protected $dates = ['created_at', 'deleted_at'];
+
+    public function images()
+    {
+        return $this->hasMany(PortfolioImage::class, 'portfolio_id');
+    }
+
+    /**
+     * Return the url of first image or sem-imagem
+     * @return string Url of Image
+     */
+    public function firstImage()
+    {
+        try {
+            return  $this
+                        ->hasMany(PortfolioImage::class, 'portfolio_id')
+                        ->orderBy('order')
+                        ->first()
+                        ->image;
+        }
+        catch(\Exception $e) {
+            return env('APP_URL').'/img/template/painel/sem-imagem.jpg';
+        }
+    }
 
 }

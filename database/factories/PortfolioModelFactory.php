@@ -12,13 +12,13 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\Models\Video::class, function (Faker\Generator $faker) {
+$factory->define(App\Models\Portfolio::class, function (Faker\Generator $faker) {
     $faker->addProvider(new Faker\Provider\Youtube($faker));
 
     return [
         'title' => $faker->words(3, true),
-        'description' => $faker->words(3, true),
+        'text' => $faker->paragraphs(3, true),
         'url' => $faker->youtubeEmbedUri(),
-        'image' => $faker->imageUrl(800, 600, 'abstract', true, 'Imagem Ilustrativa', true),
+        'active' => rand(0,1),
     ];
 });

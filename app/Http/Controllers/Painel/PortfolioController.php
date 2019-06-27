@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Painel;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Painel\PortfolioRequest;
-use App\Repositories\PortfolioRepository;
 use Illuminate\Http\Request;
+use App\Models\PortfolioImage;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Session;
 use Spatie\Activitylog\Models\Activity;
+use App\Repositories\PortfolioRepository;
+use App\Http\Requests\Painel\PortfolioRequest;
 
 class PortfolioController extends Controller
 {
@@ -59,12 +60,32 @@ class PortfolioController extends Controller
             return redirect('/');
             
         $data = $request->all();
-        $data['image'] = str_replace("://painel.", '://', $data['image']);
+        $data['url'] = str_replace('/watch?v=', '/embed/', $data['url']);
 
-        $this->repository->create($data);
+        $portfolio = $this->repository->create($data);
 
         //Grava Log
         Activity::all()->last();
+
+        //Imagens
+        if(isset($data['images'])) {
+            $imgs = $data['images'];
+            $images = array();
+
+            //Imagens
+            foreach ($imgs as $img) {
+                $imageModel = new PortfolioImage($img);
+
+                $imageModel->portfolio()->associate($portfolio);
+
+                $images[] = $imageModel;
+            }
+
+            $portfolio->images()->saveMany($images);
+
+            //Grava Log
+            Activity::all()->last();
+        }
 
         Session::flash('message', ['Portifólio salvo com sucesso!']); 
         Session::flash('alert-type', 'alert-success'); 
@@ -112,12 +133,32 @@ class PortfolioController extends Controller
             return redirect('/');
             
         $data = $request->all();
-        $data['image'] = str_replace("://painel.", '://', $data['image']);
+        $data['url'] = str_replace('/watch?v=', '/embed/', $data['url']);
 
-        $this->repository->update($data, $id);
+        $portfolio = $this->repository->update($data, $id);
 
         //Grava Log
         Activity::all()->last();
+
+        //Imagens
+        $portfolio->images()->delete();
+        if(isset($data['images'])) {
+            $imgs = $data['images'];
+            $images = array();
+
+            foreach ($imgs as $img) {
+                $imageModel = new PortfolioImage($img);
+
+                $imageModel->portfolio()->associate($portfolio);
+
+                $images[] = $imageModel;
+            }
+
+            $portfolio->images()->saveMany($images);
+
+            //Grava Log
+            Activity::all()->last();
+        }
 
         Session::flash('message', ['Portifólio alterado com sucesso!']); 
         Session::flash('alert-type', 'alert-success'); 

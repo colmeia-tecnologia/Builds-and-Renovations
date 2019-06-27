@@ -18,12 +18,11 @@
     <table class="table table-responsive table-striped table-bordered table-hovered">
         <thead>
             <tr>
-                <th width="100px">Ações</th>
+                <th width="100px">Actions</th>
                 <th width="100px">ID</th>
-                <th>Nome</th>
-                <th>URL</th>
-                <th width="150px">Imagem</th>
-                <th width="100px">Ativo</th>
+                <th>Title</th>
+                <th>Video</th>
+                <th width="100px">Active</th>
             </tr>
         </thead>
         <tbody>
@@ -43,10 +42,9 @@
                     @endcan
                 </td>
                 <td>{{$portfolio->id}}</td>
-                <td>{{$portfolio->name}}</td>
-                <td>{{$portfolio->url}}</td>
+                <td>{{$portfolio->title}}</td>
                 <td>
-                    <img src='{{$portfolio->image}}' class='img-responsive'>
+                    <a href='{{$portfolio->url}}' target='_blank'>{{$portfolio->url}}</a>
                 </td>
                 <td>
                     @php

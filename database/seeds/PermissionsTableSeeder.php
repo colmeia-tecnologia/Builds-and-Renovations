@@ -14,7 +14,7 @@ class PermissionsTableSeeder extends Seeder
     {
         $tables =  [
                         'banners'           => 'banners',
-                        //'portfolios'      => 'portifólio',
+                        'portfolios'      => 'portifólio',
                         'services'          => 'services categories',
                         'subservices'       => 'specific services',
                         'clients'           => 'clients',

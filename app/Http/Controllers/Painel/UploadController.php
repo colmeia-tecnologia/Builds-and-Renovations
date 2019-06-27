@@ -38,6 +38,13 @@ class UploadController extends Controller
         return view('painel.upload.index', compact('files'));
     }
 
+    public function manyImages(Request $request)
+    {
+        $images = $request->all()['images'];
+
+        return view('painel.upload.manyImages', compact('images'));
+    }
+
     public function upload(Request $request)
     {
         $data = $request->all();
@@ -46,14 +53,12 @@ class UploadController extends Controller
 
         foreach($filesUp as $file) {
             $name = $file->getClientOriginalName();
-            $name = str_replace(' ', '_', $name);
 
             Storage::putFileAs('/img', $file, $name);
         }
         
         return redirect()->back();
     }
-
 
     public function delete($file)
     {
