@@ -10,7 +10,7 @@
             </div>
             <div class='col m6 s12 pull-m6'>
                 <p>
-                    Send us your doubts, suggestions or ask for for a budget request without commitment.
+                    Send us your doubts, suggestions or ask for a budget request without commitment.
                 </p>
 
                 <p>

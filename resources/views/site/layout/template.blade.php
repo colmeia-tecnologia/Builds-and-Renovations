@@ -29,9 +29,8 @@
     {!! Html::script('/js/common/jquery.maskedinput.min.js') !!}
     {!! Html::script('/js/site/jquery.waypoints.min.js') !!}
     {!! Html::script('/js/common/jsMascaras.min.js') !!}
-    {!! Html::script('/js/site/menu.min.js') !!}
     {!! Html::script('/js/site/animations.min.js') !!}
-    {!! Html::script('/js/site/home.min.js') !!}
+    {!! Html::script('/js/site/menu.min.js') !!}
 
     <script>
         @if($errors->any())
@@ -53,4 +52,5 @@
         @endif
     </script>
     @yield('scripts')
+    {!! Html::script('/js/site/home.min.js') !!}
 </html>

@@ -10,7 +10,7 @@
         <div id="app">
             @include('site.layout.float-button')
 
-            @include('site.layout.header')
+            @include('site.layout.headerInternal')
             
             <main>
                 @yield('content')

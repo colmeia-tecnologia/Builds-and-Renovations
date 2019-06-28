@@ -149,7 +149,8 @@ nav ul li a
     font-size: .8em;
     padding: 18px;
 }
-nav ul li a.active {
+
+nav ul.menuDesktop li a.active {
     color: $secondary;
     text-decoration: underline;
     font-weight: bold;
