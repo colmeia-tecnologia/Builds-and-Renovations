@@ -13,6 +13,52 @@ class ServicesTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
+        Bathroom & Kitchen
+            Bathroom Safety
+            Bathroom Exhaust Fans & Parts
+            Bathroom Faucets & Shower Heads
+            Kitchen Faucets & Water Dispensers
+            Water leaking
+            Clogging 
+
+        Electrical 
+            Electrical Wire & Cable
+            Electrical Boxes & Covers
+            Conduit & Fittings
+            Breaker Boxes
+            Light Switches & Dimmers
+            Fire Safety
+            Solar Power
+
+        Flooring 
+            ALL GROUT & MORTAR
+            Carpet & Carpet Tile
+            Laminate Flooring on Walls
+            Hardwood Flooring
+
+        Garden & Outdoor Living
+
+        Heating & Cooling
+
+        Paint
+            Exterior Stains & Floor Coatings
+            Patching & Repair
+            Interior Stains & Finishes
+            Rubberized Coatings
+            Interior Paint
+            Exterior Paint
+
+        Plumbing 
+
+        Roofing 
+
+        Smart Home & Security 
+
+        Storage & Organization
+        */
+
+
         //Builds and Renovations
         factory(Service::class)->create([
             'name' => 'Builds and Renovations',
