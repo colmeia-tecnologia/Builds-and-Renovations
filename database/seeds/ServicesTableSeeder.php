@@ -13,280 +13,349 @@ class ServicesTableSeeder extends Seeder
      */
     public function run()
     {
-        /*
-        Bathroom & Kitchen
-            Bathroom Safety
-            Bathroom Exhaust Fans & Parts
-            Bathroom Faucets & Shower Heads
-            Kitchen Faucets & Water Dispensers
-            Water leaking
-            Clogging 
-
-        Electrical 
-            Electrical Wire & Cable
-            Electrical Boxes & Covers
-            Conduit & Fittings
-            Breaker Boxes
-            Light Switches & Dimmers
-            Fire Safety
-            Solar Power
-
-        Flooring 
-            ALL GROUT & MORTAR
-            Carpet & Carpet Tile
-            Laminate Flooring on Walls
-            Hardwood Flooring
-
-        Garden & Outdoor Living
-
-        Heating & Cooling
-
-        Paint
-            Exterior Stains & Floor Coatings
-            Patching & Repair
-            Interior Stains & Finishes
-            Rubberized Coatings
-            Interior Paint
-            Exterior Paint
-
-        Plumbing 
-
-        Roofing 
-
-        Smart Home & Security 
-
-        Storage & Organization
-        */
-
-
-        //Builds and Renovations
+        //Bathroom & Kitchen
         factory(Service::class)->create([
-            'name' => 'Builds and Renovations',
-            'image' => ENV('APP_URL').'/img/builds-and-renovations.png',
-        ]);
-
-        factory(Subservice::class)->create([
-            'service_id' => 1,
-            'name' => 'Masonry',
+            'name' => 'Bathroom & Kitchen',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Floors',
+            'name' => 'Bathroom Safety',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Pools'
+            'name' => 'Bathroom Exhaust Fans & Parts',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Roof',
+            'name' => 'Bathroom Faucets & Shower Heads',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Plaster and Drywall',
+            'name' => 'Kitchen Faucets & Water Dispensers',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Demolitions',
+            'name' => 'Water leaking',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
-            'name' => 'Sink, Basin and Tank',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 1,
-            'name' => 'Other Service',
-        ]);
-
-        //Hidraulic
-        factory(Service::class)->create([
-            'name' => 'Hidraulic',
-            'image' => ENV('APP_URL').'/img/hidraulic.png',
-        ]);
-
-        factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Vasamento',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 2,
             'name' => 'Clogging',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Fat box',
+            'service_id' => 1,
+            'name' => 'Bathroom storage',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 1,
+            'name' => 'Bathroom storage furniture',
+        ]);
+
+
+        //Electrical
+        factory(Service::class)->create([
+            'name' => 'Electrical',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
             'service_id' => 2,
+            'name' => 'Electrical Wire & Cable',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Electrical Boxes & Covers',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Conduit & Fittings',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Breaker Boxes',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Light Switches & Dimmers',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Fire Safety',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 2,
+            'name' => 'Solar Power',
+        ]);
+
+
+        //Flooring
+        factory(Service::class)->create([
+            'name' => 'Flooring',
+            'image' => null,
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 3,
+            'name' => 'All Grout & Mortar',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 3,
+            'name' => 'Carpet & Tile Carpet',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 3,
+            'name' => 'Laminate Flooring on Walls',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 3,
+            'name' => 'Hardwood Flooring',
+        ]);
+
+
+        //Garden & Outdoor Living
+        factory(Service::class)->create([
+            'name' => 'Garden & Outdoor Living',
+            'image' => null,
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Design Your Landscape',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Pavers, Step Stones & Retaining Walls',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Garden Center',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Outdoor Drainage',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Greenhouses',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Outdoor Living Construction',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Outdoor Heating',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Outdoor Gas & Wood-Burning Fireplaces',
+        ]);
+
+        
+        //Heating & Cooling
+        factory(Service::class)->create([
+            'name' => 'Heating & Cooling',
+            'image' => null,
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'Air Conditioners',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'Evaporative Coolers',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'HVAC Duct & Fittings',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'Flexible Duct',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'Nest Thermostat E',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 5,
+            'name' => 'Humidifiers & Dehumidifiers',
+        ]);
+
+        
+        //Paint
+        factory(Service::class)->create([
+            'name' => 'Paint',
+            'image' => null,
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Exterior Stains & Floor Coatings',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Patching & Repair',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Interior Stains & Finishes',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Rubberized Coatings',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Interior Paint',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 6,
+            'name' => 'Exterior Paint',
+        ]);
+
+        
+        //Plumbing
+        factory(Service::class)->create([
             'name' => 'Plumbing',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Tap',
+            'service_id' => 7,
+            'name' => 'Augers, Plungers & Drain Openers',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Siphon',
+            'service_id' => 7,
+            'name' => 'Plumbing Parts & Repair',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Water Box',
+            'service_id' => 7,
+            'name' => 'Firestop Products & Systems',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 2,
-            'name' => 'Other Service',
+            'service_id' => 7,
+            'name' => 'Plumbing Tools & Cements',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 7,
+            'name' => 'Utility Sinks & Faucets',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 7,
+            'name' => 'Water Heaters',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 7,
+            'name' => 'Pipe & Fittings',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 7,
+            'name' => 'Valves & Valve Repair',
         ]);
 
-        //Eletric
+        
+        //Roof
         factory(Service::class)->create([
-            'name' => 'Eletric',
-            'image' => ENV('APP_URL').'/img/eletric.png',
+            'name' => 'Roof',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Cabling',
+            'service_id' => 8,
+            'name' => 'Roof Types',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Circuit breakers',
+            'service_id' => 8,
+            'name' => 'Roof solar panels',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Wiring',
+            'service_id' => 8,
+            'name' => 'Gambrel Roof',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Switches and Outlets',
+            'service_id' => 8,
+            'name' => 'Shed Roof',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Lamps and Luminaires',
+            'service_id' => 8,
+            'name' => 'Flat Roof',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Shower Resistance',
+            'service_id' => 8,
+            'name' => 'Gable Roof',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Intercoms',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Air conditioning',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Electrician',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Electrician with NR-10',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Cameras and Sensors',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 3,
-            'name' => 'Other Service',
+            'service_id' => 8,
+            'name' => 'Mansard Roof',
         ]);
 
-        //Painting and Decoration
+        
+        //Smart Home & Security
         factory(Service::class)->create([
-            'name' => 'Painting and Decoration',
-            'image' => ENV('APP_URL').'/img/painting-and-decoration.png',
+            'name' => 'Smart Home & Security',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Wood Lacquering',
+            'service_id' => 9,
+            'name' => 'Dimmers and Lighting',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Interior Wall Painting',
+            'service_id' => 9,
+            'name' => 'Security Systems & Access Control',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Exterior Wall Painting',
+            'service_id' => 9,
+            'name' => 'Home Theater',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Street Sidewalk Painting',
+            'service_id' => 9,
+            'name' => 'Temperature & Climate Control',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Painting of Garage Spaces',
+            'service_id' => 9,
+            'name' => 'Phone Systems',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Metal Surface Painting',
+            'service_id' => 9,
+            'name' => 'Discober Smart Security',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Textures and Special Paintings',
+            'service_id' => 9,
+            'name' => 'Thermostats',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 4,
-            'name' => 'Other Service',
+            'service_id' => 9,
+            'name' => 'Cameras',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 9,
+            'name' => 'Smart Lighting',
         ]);
 
-        //Projects and Administration
+        
+        //Storage & Organization
         factory(Service::class)->create([
-            'name' => 'Projects and Administration',
-            'image' => ENV('APP_URL').'/img/projects-and-administration.png',
+            'name' => 'Storage & Organization',
+            'image' => null,
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Architectural project',
+            'service_id' => 10,
+            'name' => 'Swimming Pool Repairs',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Foundation Project',
+            'service_id' => 10,
+            'name' => 'Interior Design',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Structural Design',
+            'service_id' => 10,
+            'name' => 'Property restructuring',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Electrical project',
+            'service_id' => 10,
+            'name' => 'House Painting',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Hydrosanitary Project',
+            'service_id' => 10,
+            'name' => 'Structural Renovation',
         ]);
         factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Sustainable Projects',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => '3D mockup',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 5,
-            'name' => 'Construction Management',
-        ]);
-
-        //Sustainability
-        factory(Service::class)->create([
-            'name' => 'Sustainability',
-            'image' => ENV('APP_URL').'/img/sustainability.png',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 6,
-            'name' => 'Reuse Water Systems',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 6,
-            'name' => 'Solar Power Systems',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 6,
-            'name' => 'Sustainable Constructions',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 6,
-            'name' => 'Other Service',
+            'service_id' => 10,
+            'name' => 'Pool Fences',
         ]);
     }
 }
