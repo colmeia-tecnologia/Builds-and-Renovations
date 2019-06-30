@@ -16,7 +16,7 @@ class ServicesTableSeeder extends Seeder
         //Bathroom & Kitchen
         factory(Service::class)->create([
             'name' => 'Bathroom & Kitchen',
-            'image' => null,
+            'image' => env('APP_URL').'/img/bathroom-kitchen.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 1,
@@ -55,7 +55,7 @@ class ServicesTableSeeder extends Seeder
         //Electrical
         factory(Service::class)->create([
             'name' => 'Electrical',
-            'image' => null,
+            'image' => env('APP_URL').'/img/electrical.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 2,
@@ -113,7 +113,7 @@ class ServicesTableSeeder extends Seeder
         //Garden & Outdoor Living
         factory(Service::class)->create([
             'name' => 'Garden & Outdoor Living',
-            'image' => null,
+            'image' => env('APP_URL').'/img/garden-and-outdoor-living.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 4,
@@ -183,7 +183,7 @@ class ServicesTableSeeder extends Seeder
         //Painting
         factory(Service::class)->create([
             'name' => 'Painting',
-            'image' => null,
+            'image' => env('APP_URL').'/img/painting.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 6,
@@ -251,6 +251,7 @@ class ServicesTableSeeder extends Seeder
 
         
         //Roofinging
+        
         factory(Service::class)->create([
             'name' => 'Roofing',
             'image' => null,
@@ -331,7 +332,7 @@ class ServicesTableSeeder extends Seeder
         //Storage & Organization
         factory(Service::class)->create([
             'name' => 'Storage & Organization',
-            'image' => null,
+            'image' => env('APP_URL').'/img/storage-rganization.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 10,
