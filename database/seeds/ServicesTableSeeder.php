@@ -180,9 +180,9 @@ class ServicesTableSeeder extends Seeder
         ]);
 
         
-        //Paint
+        //Painting
         factory(Service::class)->create([
-            'name' => 'Paint',
+            'name' => 'Painting',
             'image' => null,
         ]);
         factory(Subservice::class)->create([
@@ -250,9 +250,9 @@ class ServicesTableSeeder extends Seeder
         ]);
 
         
-        //Roof
+        //Roofinging
         factory(Service::class)->create([
-            'name' => 'Roof',
+            'name' => 'Roofing',
             'image' => null,
         ]);
         factory(Subservice::class)->create([
