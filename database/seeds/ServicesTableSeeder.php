@@ -312,7 +312,7 @@ class ServicesTableSeeder extends Seeder
         ]);
         factory(Subservice::class)->create([
             'service_id' => 9,
-            'name' => 'Discober Smart Security',
+            'name' => 'Discover Smart Security',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 9,

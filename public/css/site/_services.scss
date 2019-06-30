@@ -8,9 +8,6 @@ div.subservicesContainer
     transform: rotateY(180deg);
     position: relative;
     text-align: center;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 div.servicesContainerInside
@@ -27,7 +24,7 @@ div.subservicesContainerInside
     position: relative;
     width: 100%;
     border: solid 3px $primary;
-    height: 170px;
+    height: 230px;
     text-align: center !important;
     padding: 20px;
     font-weight: bold;
