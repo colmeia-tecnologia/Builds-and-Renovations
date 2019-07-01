@@ -147,6 +147,14 @@ class ServicesTableSeeder extends Seeder
             'service_id' => 4,
             'name' => 'Outdoor Gas & Wood-Burning Fireplaces',
         ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Swimming Pool Repairs',
+        ]);
+        factory(Subservice::class)->create([
+            'service_id' => 4,
+            'name' => 'Pool Fences',
+        ]);
 
         
         //Heating & Cooling
@@ -336,10 +344,6 @@ class ServicesTableSeeder extends Seeder
         ]);
         factory(Subservice::class)->create([
             'service_id' => 10,
-            'name' => 'Swimming Pool Repairs',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 10,
             'name' => 'Interior Design',
         ]);
         factory(Subservice::class)->create([
@@ -353,10 +357,6 @@ class ServicesTableSeeder extends Seeder
         factory(Subservice::class)->create([
             'service_id' => 10,
             'name' => 'Structural Renovation',
-        ]);
-        factory(Subservice::class)->create([
-            'service_id' => 10,
-            'name' => 'Pool Fences',
         ]);
     }
 }
