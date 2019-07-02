@@ -90,7 +90,7 @@ class ServicesTableSeeder extends Seeder
         //Flooring
         factory(Service::class)->create([
             'name' => 'Flooring',
-            'image' => null,
+            'image' => env('APP_URL').'/img/flooring.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 3,
@@ -160,7 +160,7 @@ class ServicesTableSeeder extends Seeder
         //Heating & Cooling
         factory(Service::class)->create([
             'name' => 'Heating & Cooling',
-            'image' => null,
+            'image' => env('APP_URL').'/img/heating-cooling.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 5,
@@ -222,7 +222,7 @@ class ServicesTableSeeder extends Seeder
         //Plumbing
         factory(Service::class)->create([
             'name' => 'Plumbing',
-            'image' => null,
+            'image' => env('APP_URL').'/img/plumbing.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 7,
@@ -258,11 +258,10 @@ class ServicesTableSeeder extends Seeder
         ]);
 
         
-        //Roofinging
-        
+        //Roofing
         factory(Service::class)->create([
             'name' => 'Roofing',
-            'image' => null,
+            'image' => env('APP_URL').'/img/roofing.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 8,
@@ -297,7 +296,7 @@ class ServicesTableSeeder extends Seeder
         //Smart Home & Security
         factory(Service::class)->create([
             'name' => 'Smart Home & Security',
-            'image' => null,
+            'image' => env('APP_URL').'/img/smart-home-security.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 9,
@@ -340,7 +339,7 @@ class ServicesTableSeeder extends Seeder
         //Storage & Organization
         factory(Service::class)->create([
             'name' => 'Storage & Organization',
-            'image' => env('APP_URL').'/img/storage-rganization.png',
+            'image' => env('APP_URL').'/img/storage-organization.png',
         ]);
         factory(Subservice::class)->create([
             'service_id' => 10,
