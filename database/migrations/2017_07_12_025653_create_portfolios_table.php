@@ -17,7 +17,7 @@ class CreatePortfoliosTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('text');
-            $table->string('url');
+            $table->string('url')->nullable();
             $table->boolean('active')->default('1');
             $table->timestamps();
             $table->softDeletes();

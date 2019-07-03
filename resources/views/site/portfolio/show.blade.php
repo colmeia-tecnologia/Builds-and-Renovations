@@ -8,9 +8,11 @@
     <div class='col s12'>
         {!! $portfolio->text !!}
 
-        <div class="video-container margin-top-g">
-            <iframe width="853" height="480" src="{{$portfolio->url}}" frameborder="0" allowfullscreen></iframe>
-        </div>
+        @if(isset($portfolio->url) && $portfolio->url != '')
+            <div class="video-container margin-top-g">
+                <iframe width="853" height="480" src="{{$portfolio->url}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        @endif
 
         <div class="carousel" id='carouselModal'>
             @foreach ($portfolio->images as $image)

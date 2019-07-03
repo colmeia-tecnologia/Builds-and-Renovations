@@ -26,7 +26,7 @@ class PortfolioRequest extends FormRequest
         return [
             'title' => 'required|max:100',
             'text' => 'required',
-            'url' => 'required|url',
+            'url' => 'nullable|url',
             'active' => 'required',
         ];
     }
