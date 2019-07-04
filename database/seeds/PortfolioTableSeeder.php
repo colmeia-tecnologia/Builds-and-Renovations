@@ -21,7 +21,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 1,
-                'image' => env('APP_URL').'/img/portifolio1-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio1-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -35,7 +35,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 2,
-                'image' => env('APP_URL').'/img/portifolio2-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio2-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -49,7 +49,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 3,
-                'image' => env('APP_URL').'/img/portifolio3-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio3-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -63,7 +63,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 4,
-                'image' => env('APP_URL').'/img/portifolio4-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio4-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -77,7 +77,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 5,
-                'image' => env('APP_URL').'/img/portifolio5-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio5-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -91,7 +91,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 6,
-                'image' => env('APP_URL').'/img/portifolio6-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio6-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -105,7 +105,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 7,
-                'image' => env('APP_URL').'/img/portifolio7-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio7-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -119,7 +119,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 8,
-                'image' => env('APP_URL').'/img/portifolio8-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio8-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -133,7 +133,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 9,
-                'image' => env('APP_URL').'/img/portifolio9-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio9-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -147,7 +147,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 10,
-                'image' => env('APP_URL').'/img/portifolio10-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio10-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -161,7 +161,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 11,
-                'image' => env('APP_URL').'/img/portifolio11-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio11-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -175,7 +175,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 12,
-                'image' => env('APP_URL').'/img/portifolio12-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio12-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -189,7 +189,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 13,
-                'image' => env('APP_URL').'/img/portifolio13-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio13-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -203,7 +203,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 14,
-                'image' => env('APP_URL').'/img/portifolio14-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio14-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -217,7 +217,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 15,
-                'image' => env('APP_URL').'/img/portifolio15-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio15-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -231,7 +231,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 16,
-                'image' => env('APP_URL').'/img/portifolio16-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio16-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -245,7 +245,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 17,
-                'image' => env('APP_URL').'/img/portifolio17-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio17-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
@@ -259,7 +259,7 @@ class PortfolioTableSeeder extends Seeder
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
             factory(PortfolioImage::class)->create([
                 'portfolio_id' => 18,
-                'image' => env('APP_URL').'/img/portifolio18-'.$imgCount.'.jpeg',
+                'image' => env('APP_URL').'/img/portfolio18-'.$imgCount.'.jpg',
                 'order' => $i,
             ]);
         }
