@@ -263,5 +263,19 @@ class PortfolioTableSeeder extends Seeder
                 'order' => $i,
             ]);
         }
+
+
+        factory(Portfolio::class)->create([
+            'title' => 'Portfolio 19',
+            'text' => '',
+        ]);
+        for($i=1; $i<=9; $i++) {
+            $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
+            factory(PortfolioImage::class)->create([
+                'portfolio_id' => 19,
+                'image' => env('APP_URL').'/img/portfolio19-'.$imgCount.'.jpg',
+                'order' => $i,
+            ]);
+        }
     }
 }
