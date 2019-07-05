@@ -1,10 +1,24 @@
 // main: style.scss
+div.portfolioContainer
+{
+  text-align: center;
+  position: relative;
+}
 
 div.portfolioContainer img.portfolioImage
 {
     filter: grayscale(100%);
 
-  transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+img.portfolioCarouselImage,
+div.portfolioContainer img.portfolioImage
+{
+  position: relative;
+
+  height: 200px;
+  margin: 0 auto;
 }
 
 div.portfolioContainer:hover img.portfolioImage

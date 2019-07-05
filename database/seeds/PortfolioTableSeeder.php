@@ -17,6 +17,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 1',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=25; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -32,6 +33,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 2',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=13; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -47,6 +49,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 3',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=19; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -62,6 +65,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 4',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=9; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -77,6 +81,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 5',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=3; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -92,6 +97,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 6',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=11; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -107,6 +113,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 7',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=8; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -122,6 +129,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 8',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=15; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -137,6 +145,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 9',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=7; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -152,6 +161,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 10',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=48; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -167,6 +177,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 11',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=15; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -182,6 +193,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 12',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=3; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -197,6 +209,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 13',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=8; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -212,6 +225,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 14',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=18; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -227,6 +241,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 15',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=5; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -242,6 +257,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 16',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=6; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -257,6 +273,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 17',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=5; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -272,6 +289,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 18',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=11; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);
@@ -287,6 +305,7 @@ class PortfolioTableSeeder extends Seeder
             'title' => 'Portfolio 19',
             'text' => '',
             'active' => 1,
+            'url' => null,
         ]);
         for($i=1; $i<=9; $i++) {
             $imgCount = str_pad($i, 2, "0", STR_PAD_LEFT);

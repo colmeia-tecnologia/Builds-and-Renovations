@@ -17,7 +17,7 @@
         <div class="carousel" id='carouselModal'>
             @foreach ($portfolio->images as $image)
                 <a class="carousel-item">
-                    <img src="{{$image->image}}" class='responsive-img' alt='{{$image->description}}' title='{{$image->title}}'>
+                    <img src="{{$image->image}}" class='responsive-img portfolioCarouselImage' alt='{{$image->description}}' title='{{$image->title}}'>
                 </a>
             @endforeach
         </div>
