@@ -10,7 +10,10 @@
             </div>
             <div class='col s12 center-align animated hide-on-med-and-up show-on-small whyTitle'>
                 <h1>
-                    Why hire <br/><strong class='primary-text'>Builds and Renovations</strong>?
+                    <span class='white-text'>
+                        Why hire<br/>
+                        <strong class='secondary-text'>Builds and Renovations</strong>?
+                    </span>
                 </h1>
             </div>
             <div class='col m6 whyText white-text animated'>
