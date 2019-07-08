@@ -5,13 +5,13 @@
         <div class='row'>
             <div class='col m6 right-align animated hide-on-small-only whyTitle'>
                 <h1 class='no-border'>
-                    Why hire <br/><strong class='primary-text'>Builds and Renovations</strong>?
+                    Why choose <br/><strong class='primary-text'>Builds and Renovations</strong>?
                 </h1>
             </div>
             <div class='col s12 center-align animated hide-on-med-and-up show-on-small whyTitle'>
                 <h1>
                     <span class='white-text'>
-                        Why hire<br/>
+                        Why choose<br/>
                         <strong class='secondary-text'>Builds and Renovations</strong>?
                     </span>
                 </h1>
