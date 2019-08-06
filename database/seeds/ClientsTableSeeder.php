@@ -17,6 +17,10 @@ class ClientsTableSeeder extends Seeder
         ]);
 
         factory(Client::class)->create([
+            'name' => 'Condos',
+        ]);
+
+        factory(Client::class)->create([
             'name' => 'Stores and Offices',
         ]);
 
@@ -25,11 +29,7 @@ class ClientsTableSeeder extends Seeder
         ]);
 
         factory(Client::class)->create([
-            'name' => 'Shopping Centers',
-        ]);
-
-        factory(Client::class)->create([
-            'name' => 'Townhouses',
+            'name' => 'Malls',
         ]);
 
         factory(Client::class)->create([
