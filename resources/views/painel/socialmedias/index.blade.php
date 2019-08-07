@@ -51,7 +51,7 @@
                         </a>
                     @endif
                 </td>
-                <td>{!!$socialmedia->icon!!}</td>
+                <td><img src='{{$socialmedia->icon}}' class='img-responsive'></td>
                 <td>
                     @php
                         $checked = '';

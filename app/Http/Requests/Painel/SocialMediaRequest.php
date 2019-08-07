@@ -26,7 +26,8 @@ class SocialMediaRequest extends FormRequest
         return [
             'name' => 'required',
             'url' => 'required|url',
-            'icon' => 'required',
+            //'icon' => 'required',
+            'image' => 'required',
         ];
     }
 

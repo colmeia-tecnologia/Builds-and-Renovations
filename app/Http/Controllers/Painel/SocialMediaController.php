@@ -60,6 +60,7 @@ class SocialMediaController extends Controller
             return redirect('/');
 
         $data = $request->all();
+        $data['icon'] = str_replace("://painel.", '://', $data['image']);
 
         $this->repository->create($data);
 
@@ -114,6 +115,7 @@ class SocialMediaController extends Controller
             return redirect('/');
 
         $data = $request->all();
+        $data['icon'] = str_replace("://painel.", '://', $data['image']);
 
         $this->repository->update($data, $id);
 
