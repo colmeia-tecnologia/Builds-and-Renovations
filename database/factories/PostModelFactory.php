@@ -15,6 +15,12 @@
 $factory->define(App\Models\Post::class, function (Faker\Generator $faker) {
 
     return [
-        'title' => $faker->word
+        'title' => $faker->words(2, true),
+        'description' => $faker->sentence(10), 
+        'text' => $faker->paragraphs(3,true), 
+        'image' => $faker->imageUrl(800, 600, 'abstract', true, 'Imagem Ilustrativa', true),
+        'author_id' => 1, 
+        'active' => 1, 
+        'post_category_id' => rand(1,5),
     ];
 });

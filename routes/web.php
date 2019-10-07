@@ -87,17 +87,19 @@ Route::group([
 /*
  * BLOG
  */
-/*Route::group([
+Route::group([
                 'prefix' => 'blog',
                 'namespace' => 'Blog',
-                'middleware' => ['getSocialMedia', 'getTelephones']
+                'middleware' => ['getSocialMedia', 'getTelephones', 'blogSidebar'],
+                'as' => 'blog.'
             ], function() 
 {
-    Route::get('/', 'BlogController@index')->name('blog.index');
-    Route::get('/post/{id}/{title}', 'BlogController@show')->name('blog.post');
-    Route::get('/arquivo/{ano}/{mes}', 'BlogController@arquivo')->name('blog.arquivo');
-    Route::post('/post-like', 'BlogController@like')->name('blog.post.like');
-});*/
+    Route::get('/', 'BlogController@index')->name('index');
+    Route::get('/materia/{title}/{id}', 'BlogController@show')->name('show');
+    Route::get('/categoria/{category}/{id}', 'BlogController@category')->name('category');
+    Route::get('/arquivo/{year}/{month}', 'BlogController@archive')->name('archive');
+    Route::post('/search', 'BlogController@search')->name('search');
+});
 
 
 /*

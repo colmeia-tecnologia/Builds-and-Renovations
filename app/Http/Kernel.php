@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\Blog\Sidebar;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -60,5 +61,6 @@ class Kernel extends HttpKernel
         'getTelephones' => \App\Http\Middleware\GetTelephones::class,
         'getEmails' => \App\Http\Middleware\GetEmails::class,
         'activeUser' => \App\Http\Middleware\VerifyActiveUser::class,
+        'blogSidebar' => Sidebar::class,
     ];
 }

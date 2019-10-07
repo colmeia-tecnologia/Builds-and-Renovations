@@ -1,3 +1,5 @@
 //CSS
-@import 'blog';
-@import 'aside';
+
+@import '../site/variables';
+@import './blog';
+@import './aside';

@@ -95,22 +95,22 @@
     </li>
 
     {{--BLOG--}}
-    {{--<li class="dropdown">
+    <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
             Blog  <span class="caret"></span>
         </a>
 
-        <ul class="dropdown-menu" role="menu">--}}
+        <ul class="dropdown-menu" role="menu">
             {{--POST_CATEGORIES--}}
-            {{--@can('view-post_categories')
+            @can('view-post_categories')
                 <li>
                     <a href='{{route('post_categories.index')}}' alt='Post Categories' title='Post Categories'>
                         <i class="fa fa-list" aria-hidden="true"></i> Post Categories
                     </a>
                 </li>
-            @endcan--}}
+            @endcan
             {{--POSTS--}}
-            {{--@can('view-posts')
+            @can('view-posts')
                 <li>
                     <a href='{{url('/posts')}}' title='Posts' alt='Posts' title='Posts'>
                         <i class="fa fa-file-text"></i> Posts
@@ -118,7 +118,7 @@
                 </li>
             @endcan
         </ul>
-    </li>--}}
+    </li>
 
     {{--Landing Pages--}}
     {{--<li class="dropdown">

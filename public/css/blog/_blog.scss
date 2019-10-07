@@ -7,8 +7,7 @@ div.containerBlog
     width: 100%; 
     min-height: 633px; 
     overflow: hidden;
-
-    background-image: url('../../../img/template/poster-movie-city.png');
+    margin-top: 80px;
 }
 
 div.containerBlog video
@@ -36,37 +35,30 @@ div.containerBlack
     padding: 40px 30px;
 }
 
-div.blogItem
+div.blogIndexItem img
 {
-    margin: 20px 10px;
+    margin:0px;
 }
 
-
-div.blogItem div.blogItemContent
-{
-    background-color:white;
-    padding: 20px;  
+div.blogIndexItem h1
+{   
+    margin: 0px;
+    font-size: 1.2em;
 }
 
-div.blogItem div.blogItemContent h1
+div.blogIndexItem h1::after
 {
-    font-size: 1.3em;
-    margin-bottom:0px;
-    color: #777777;
-    font-weight: normal;
+    content: "";
+    display: none;
+    margin: 0 auto;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: none;
 }
 
-div.blogItem div.blogItemContent h2
+div.blogIndexItem a
 {
-    font-size: .95em;
-    margin-top: 0px;
-}
-
-div.blogItem img.blogContentImgCenter
-{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    color: $primary;
 }
 
 a.btnLeia
@@ -83,26 +75,28 @@ a.btnLeia:hover
     padding: 10px 30px;
 }
 
-ul.pagination li a,
-ul.pagination li.disabled span
-{
-    background-color: #b7b7b7 !important;
-    color: #222222 !important; 
+.pagination li a,
+.pagination li span {
+    color: white;
+    background-color: #4784b2;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: .8em !important;
+    padding: 10px;
+    line-height: normal;
 }
 
-ul.pagination li a:hover,
-ul.pagination li.active:hover span,
-{
-    background-color: #707070 !important;
-    color: #222222 !important; 
-    border-color: #707070 !important;
+.pagination li.disabled,
+.pagination li.disabled span {
+    color: $primary;
+    background-color: #cbcbcb;
 }
 
-ul.pagination li.active span,
-{
-    background-color: #222222 !important;
-    color: #b7b7b7 !important; 
-    border-color: #707070 !important;
+.pagination li.active,
+.pagination li.active span,
+.pagination li a:hover{
+    background-color: $primary;
+    color: white !important;
 }
 
 /*

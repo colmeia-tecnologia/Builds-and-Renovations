@@ -6,19 +6,17 @@ use Prettus\Repository\Contracts\CriteriaInterface;
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**
- * Class ArchiveCriteria.
+ * Class SearchCriteria.
  *
  * @package namespace App\Criteria\Blog;
  */
-class ArchiveCriteria implements CriteriaInterface
+class SearchCriteria implements CriteriaInterface
 {
-    private $year;
-    private $month;
+    private $search;
 
-    public function __construct($year, $month)
+    public function __construct($search)
     {
-        $this->year = $year;
-        $this->month = $month;
+        $this->search = $search;
     }
 
     /**
@@ -31,11 +29,8 @@ class ArchiveCriteria implements CriteriaInterface
      */
     public function apply($model, RepositoryInterface $repository)
     {
-        $model = $model
-                    ->whereYear('created_at', '=', $this->year)
-                    ->whereMonth('created_at', '=', $this->month)
-                    ->orderBy('created_at', 'DESC');
-
+        $model = $model->where('title', 'LIKE', '%'.$this->search.'%');
+        
         return $model;
     }
 }

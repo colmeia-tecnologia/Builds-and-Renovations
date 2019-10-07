@@ -6,19 +6,17 @@ use Prettus\Repository\Contracts\CriteriaInterface;
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**
- * Class ArchiveCriteria.
+ * Class CategoryCriteria.
  *
  * @package namespace App\Criteria\Blog;
  */
-class ArchiveCriteria implements CriteriaInterface
+class CategoryCriteria implements CriteriaInterface
 {
-    private $year;
-    private $month;
+    private $categoryId;
 
-    public function __construct($year, $month)
+    public function __construct($categoryId)
     {
-        $this->year = $year;
-        $this->month = $month;
+        $this->categoryId = $categoryId;
     }
 
     /**
@@ -31,10 +29,7 @@ class ArchiveCriteria implements CriteriaInterface
      */
     public function apply($model, RepositoryInterface $repository)
     {
-        $model = $model
-                    ->whereYear('created_at', '=', $this->year)
-                    ->whereMonth('created_at', '=', $this->month)
-                    ->orderBy('created_at', 'DESC');
+        $model = $model->where('post_category_id', $this->categoryId);
 
         return $model;
     }

@@ -5,13 +5,17 @@
 
         {{--Styles--}}
         {!! Html::style('css/site/style.min.css') !!}
+        @yield('css')
     </head>
     <body>
         <div id="app">
             @include('site.layout.float-button')
             @include('site.layout.modal')
 
-            @include('site.home.banner')
+            {{--If is site route show banners--}}
+            @if(substr(Route::currentRouteName(), 0, 5) == 'site.' )
+                @include('site.home.banner')
+            @endif
 
             @include('site.layout.header')
             
