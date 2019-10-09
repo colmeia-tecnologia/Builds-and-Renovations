@@ -43,9 +43,9 @@
 
 <meta name="keywords" content="renovation; construction; architecture; engineering; management; project; maintenance; installation; planning; execution; solution; bathroom and kitchen; electrical; flooring; garden and outdoor living; heating and cooling; painting; plumbing; roofing; smart home and security; storage and organization;">
 
-<title>{{ $title or config('app.name') }}</title>
-<meta name='title' content='{{ $title or 'Building your own paradise.' }}'/>
-<meta property='og:title' content='{{ $title or 'Building your own paradise.' }}' />
+<title>{{ $title or config('app.name').' - Building your own paradise.' }}</title>
+<meta name='title' content='{{ $title or config('app.name').' - Building your own paradise.' }}'/>
+<meta property='og:title' content='{{ $title or config('app.name').' - Building your own paradise.' }}' />
 
 
 <meta name='description' content='{{ $description or 'Architectural design, engineering and construction, fitting your needs. Hire BUILDS AND RENOVATIONS and find out that costs nothing to have peace of mind and professionalism from start to finish.' }}' />
