@@ -14,7 +14,7 @@
                 </ul>
             </div>
         
-            <div class='right show-on-small menu hide-on-med-and-up'>
+            <div class='right show-on-med menu hide-on-large-only'>
                 <i class="medium material-icons" id='menuIcon'>menu</i>
             </div>
         </div>

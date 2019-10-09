@@ -34,3 +34,16 @@ div.clientsContainer ul.clientsList li
     background-size: 1.5em;
     padding-right: 55px;
 }
+
+
+div.clientsContainer ul.clientsNoVideo
+{
+    text-align: center !important;
+}
+
+
+div.clientsContainer ul.clientsNoVideo li
+{
+    background-image: none;
+    padding-right: 0px;
+}
