@@ -28,7 +28,7 @@ class IndexController extends Controller
                                     PortfolioRepository $portfolioRepository
                                 )
     {   
-        Cache::flush();
+        //Cache::flush();
         $this->bannerRepository = $bannerRepository;
         $this->serviceRepository = $serviceRepository;
         $this->clientRepository = $clientRepository;
