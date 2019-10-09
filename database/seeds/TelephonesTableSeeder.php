@@ -14,7 +14,7 @@ class TelephonesTableSeeder extends Seeder
     {
         factory(Telephone::class)->create([
             'name' => 'Telephone',
-            'telephone' => '+1 (407) 730-1133',
+            'telephone' => '+1 (407) 558-9954',
             'whatsapp' => 1,
             'active' => 1,
         ]);
