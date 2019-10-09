@@ -8,8 +8,8 @@
         itemprop_description
 --}}
 
-<meta name='language' content='Portuguese' />
-<meta property='og:locale' content='pt_BR' />
+<meta name='language' content='English' />
+<meta property='og:locale' content='en_US' />
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <meta charset='UTF-8' />
 
@@ -41,16 +41,16 @@
 <meta name='url' content='https://%{HTTP_HOST}%{REQUEST_URI://{{$_SERVER['HTTP_HOST']}}{{$_SERVER['REQUEST_URI']}}' />
 <meta property='og:url' content='https://{{$_SERVER['HTTP_HOST']}}{{$_SERVER['REQUEST_URI']}}'/>
 
-<meta name="keywords" content="reforma; construção; obra; arquitetura; engenharia; gestão; projeto; manutenção; instalação; planejamento; execução; solução; pintor; encanador; eletricista;">
+<meta name="keywords" content="renovation; construction; architecture; engineering; management; project; maintenance; installation; planning; execution; solution; bathroom and kitchen; electrical; flooring; garden and outdoor living; heating and cooling; painting; plumbing; roofing; smart home and security; storage and organization;">
 
 <title>{{ $title or config('app.name') }}</title>
-<meta name='title' content='{{ $title or 'Pensou em Reforma ou Construção? Contrate a REFORM.' }}'/>
-<meta property='og:title' content='{{ $title or 'Pensou em Reforma ou Construção? Contrate a REFORM.' }}' />
+<meta name='title' content='{{ $title or 'Building your own paradise.' }}'/>
+<meta property='og:title' content='{{ $title or 'Building your own paradise.' }}' />
 
 
-<meta name='description' content='{{ $description or 'Projeto arquitetônico, de engenharia e execução de obra, sob medida para a sua necessidade. Contrate a REFORM e descubra que não custa nada a mais para ter tranquilidade e profissionalismo do início ao fim da sua obra.' }}' />
-<meta property='og:description' content='{{ $description or 'Projeto arquitetônico, de engenharia e execução de obra, sob medida para a sua necessidade. Contrate a REFORM e descubra que não custa nada a mais para ter tranquilidade e profissionalismo do início ao fim da sua obra.' }}' />
-<meta itemprop='description' content='{{ $description or 'Projeto arquitetônico, de engenharia e execução de obra, sob medida para a sua necessidade. Contrate a REFORM e descubra que não custa nada a mais para ter tranquilidade e profissionalismo do início ao fim da sua obra.' }}' />
+<meta name='description' content='{{ $description or 'Architectural design, engineering and construction, fitting your needs. Hire BUILDS AND RENOVATIONS and find out that costs nothing to have peace of mind and professionalism from start to finish.' }}' />
+<meta property='og:description' content='{{ $description or 'Architectural design, engineering and construction, fitting your needs. Hire BUILDS AND RENOVATIONS and find out that costs nothing to have peace of mind and professionalism from start to finish.' }}' />
+<meta itemprop='description' content='{{ $description or 'Architectural design, engineering and construction, fitting your needs. Hire BUILDS AND RENOVATIONS and find out that costs nothing to have peace of mind and professionalism from start to finish.' }}' />
 
 
 <meta property='og:image' content='{{ $image or config('app.name') }}' />
