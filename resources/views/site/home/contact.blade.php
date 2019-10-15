@@ -23,11 +23,11 @@
                         <a href='tel:{{$telephone->telephone}}' class='link'>{{$telephone->telephone}}</a><br/>
                     @endforeach
                 </p>
-                <p>
+                {{--<p>
                     4213 Summit Creek Boulevard #7308<br/> 
                     Hunter’s Creek - Orlando - Florida<br/>
                     32837
-                </p>
+                </p>--}}
             </div>
         </div>
     </div>
