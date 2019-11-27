@@ -17,7 +17,7 @@
             $image = $banner->image;
             $imageLg = $image;
 
-            $imgArr = explode('.', $image);
+            $imgArr = explode('.com', $image);
             $imageMd = $imgArr[0].'-md.'.$imgArr[1];
             $imageSm = $imgArr[0].'-sm.'.$imgArr[1];
         @endphp
