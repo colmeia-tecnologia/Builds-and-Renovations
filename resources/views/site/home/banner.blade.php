@@ -17,9 +17,9 @@
             $image = $banner->image;
             $imageLg = $image;
 
-            $imgArr = explode('.com', $image);
-            $imageMd = $imgArr[0].'-md.'.$imgArr[1];
-            $imageSm = $imgArr[0].'-sm.'.$imgArr[1];
+            $imgExt = substr($image, -4, 4);
+            $imageMd = $str_replace($image, $imgExt, '-md'.$imgExt);
+            $imageSm = $str_replace($image, $imgExt, '-sm'.$imgExt);
         @endphp
         <div class="carousel-item">
             {{--Grande--}}
