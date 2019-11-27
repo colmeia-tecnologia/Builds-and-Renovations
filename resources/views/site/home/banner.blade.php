@@ -18,8 +18,8 @@
             $imageLg = $image;
 
             $imgExt = substr($image, -4, 4);
-            $imageMd = $str_replace($image, $imgExt, '-md'.$imgExt);
-            $imageSm = $str_replace($image, $imgExt, '-sm'.$imgExt);
+            $imageMd = str_replace($imgExt, '-md'.$imgExt, $image);
+            $imageSm = str_replace($imgExt, '-sm'.$imgExt, $image);
         @endphp
         <div class="carousel-item">
             {{--Grande--}}
