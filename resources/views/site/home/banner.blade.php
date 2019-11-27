@@ -13,8 +13,23 @@
     </div>
 
     @foreach ($banners as $banner)
+        @php
+            $image = $banner->image;
+            $imageLg = $image;
+
+            $imgArr = explode('.', $image);
+            $imageMd = $imgArr[0].'-md.'.$imgArr[1];
+            $imageSm = $imgArr[0].'-sm.'.$imgArr[1];
+        @endphp
         <div class="carousel-item">
-            <img src='{{$banner->image}}' class='responsive-img'>
+            {{--Grande--}}
+            <img src='{{$imageLg}}' class='responsive-img hide-on-med-and-down'>
+
+            {{--Medio--}}
+            <img src='{{$imageMd}}' class='responsive-img hide-on-small-only hide-on-large-only show-on-medium'>
+
+            {{--Pequeno--}}
+            <img src='{{$imageSm}}' class='responsive-img hide-on-med-only hide-on-large-only'>
         </div>
     @endforeach
 </div>
