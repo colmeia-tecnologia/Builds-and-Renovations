@@ -6,6 +6,16 @@
         {{--Styles--}}
         {!! Html::style('css/site/style.min.css') !!}
         @yield('css')
+
+        {{--Recaptcha--}}
+        <script>
+            var onloadCallback = function() {
+                grecaptcha.render('recaptcha', {
+                    'sitekey' : '6LfUickUAAAAAIHxWpTaLSos_dVcdnGUKjDaYGWP'
+                });
+            };
+
+        </script>
     </head>
     <body>
         <div id="app">
@@ -55,6 +65,10 @@
             });
         @endif
     </script>
+
+    {{--Recaptcha--}}
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+
     @yield('scripts')
     {!! Html::script('/js/site/home.min.js') !!}
 </html>

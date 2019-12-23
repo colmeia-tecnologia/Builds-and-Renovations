@@ -34,6 +34,9 @@
             <div class="red-text">{{ $errors->first('message') }}</div>
         @endif
     </div>
+    
+    <div id="recaptcha"></div>
+
     <div class="col s12 center">
         <button type='submit' class='btn btn-large waves-effect waves-light primary'>
             <i class="material-icons left">near_me</i> Send
