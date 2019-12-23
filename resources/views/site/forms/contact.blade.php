@@ -35,7 +35,9 @@
         @endif
     </div>
     
-    <div id="recaptcha"></div>
+    <div class="input-field col s12 center">
+        <div id="recaptcha"></div>
+    </div>
 
     <div class="col s12 center">
         <button type='submit' class='btn btn-large waves-effect waves-light primary'>
