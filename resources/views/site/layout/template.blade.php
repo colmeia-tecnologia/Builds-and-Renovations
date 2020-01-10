@@ -8,14 +8,14 @@
         @yield('css')
 
         {{--Recaptcha--}}
-        <script>
+        {{--<script>
             var onloadCallback = function() {
                 grecaptcha.render('recaptcha', {
                     'sitekey' : '6LfUickUAAAAAIHxWpTaLSos_dVcdnGUKjDaYGWP'
                 });
             };
 
-        </script>
+        </script>--}}
     </head>
     <body>
         <div id="app">
@@ -67,7 +67,7 @@
     </script>
 
     {{--Recaptcha--}}
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    {{--<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>--}}
 
     @yield('scripts')
     {!! Html::script('/js/site/home.min.js') !!}
