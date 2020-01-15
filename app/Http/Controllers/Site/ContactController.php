@@ -19,6 +19,22 @@ class ContactController extends Controller
         try
         {
             $data = $request->all();
+
+            $spam = [
+                ' sex ',
+                ' dating ',
+                ' sexy '
+            ];
+
+            if(
+                str_contains($data['name'], $spam) || 
+                str_contains($data['subject'], $spam) || 
+                str_contains($data['message'], $spam)
+            )
+            {
+                Session::flash('status_mail', false);
+                return redirect()->back();
+            }
             
             ContactLead::insertIgnore($data);
 
