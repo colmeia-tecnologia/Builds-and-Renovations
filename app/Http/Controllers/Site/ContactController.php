@@ -23,7 +23,8 @@ class ContactController extends Controller
             $spam = [
                 ' sex ',
                 ' dating ',
-                ' sexy '
+                ' sexy ',
+                ' make money '
             ];
 
             if(
